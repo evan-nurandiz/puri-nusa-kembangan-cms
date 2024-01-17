@@ -174,7 +174,7 @@
                                     <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
                                 </div> -->
                                 <div class="main-menu__btn-box">
-                                    <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, Saya ingin menjadwalkan visit." class="thm-btn main-menu__btn" target="_blank">JADWALKAN VISIT</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="thm-btn main-menu__btn" target="_blank">JADWALKAN VISIT</a>
                                 </div>
                             </div>
                         </div>
