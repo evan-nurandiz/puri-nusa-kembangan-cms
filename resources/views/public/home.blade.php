@@ -66,15 +66,7 @@
     <!-- template styles -->
     <link rel="stylesheet" href="{{url('/assets/css/aports.css')}}" />
     <link rel="stylesheet" href="{{url('/assets/css/aports-responsive.css')}}" />
-    <script>
-		!function (w, d, t) {
-		  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
-)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-		
-		  ttq.load('CMIDVG3C77UFIL1RAC1G');
-		  ttq.page();
-		}(window, document, 'ttq');
-	</script>
+    {!!$general['content']->tiktok_pixel_script!!}
 </head>
 
 <body class="custom-cursor">
@@ -1175,10 +1167,13 @@
                                         <p class="footer-widget__about-text">Your Next Level of Home </p>
                                     </div>
                                     <div class="site-footer__social">
-                                        <!-- <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a> -->
-                                        <a href="https://www.instagram.com/purinusakembangan/"><i class="fab fa-instagram"></i></a>
+                                        @if(isset($general['content']->twitter_link)) 
+                                            <a href="{{$general['content']->twitter_link}}"><i class="fab fa-twitter"></i></a>
+                                        @endif
+                                        @if(isset($general['content']->facebook_link)) 
+                                            <a href="{{$general['content']->facebook_link}}"><i class="fab fa-facebook"></i></a>
+                                        @endif
+                                        <a href="{{$general['content']->instagram_link}}"><i class="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1216,7 +1211,7 @@
                                                 <span class="fas fa-phone-alt"></span>
                                             </div>
                                             <div class="text">
-                                                <p><a href="tel:0818830153">0818830153</a></p>
+                                                <p><a href="tel:{{$general['content']->contact_number}}">{{$general['content']->contact_number}}</a></p>
                                             </div>
                                         </li>
                                         <li>
@@ -1224,7 +1219,7 @@
                                                 <span class="fas fa-clock"></span>
                                             </div>
                                             <div class="text">
-                                                <p>Mon - Sun: 8AM - 8PM</p>
+                                                <p>{{$general['content']->working_hour}}</p>
                                             </div>
                                         </li>
                                     </ul>

@@ -223,9 +223,6 @@ class CmsController extends Controller
             $data->house_type_small_title = $request->get('house_type_small_title');
             $data->house_type_big_title = $request->get('house_type_big_title');
         }
-
-        return $data;
-        
     
         try {
             $this->cmsHandlers->updateContentBySection($data, 'houseType');
@@ -323,5 +320,61 @@ class CmsController extends Controller
     public function AdminHouseTypeUpdateList(Request $request, $id) {
 
     } 
+
+    public function AdminGeneralView() {
+        try {
+            $content = $this->cmsHandlers->getContentBySection('general');
+            $content['content'] = json_decode($content['content']);
+
+            return view('admin.admin-general-cms', [
+                'content' => $content
+            ]);
+        } catch (Exception $e) 
+        {
+            return redirect()->back()->with(
+                'status','fail',
+            )->with(
+                'message','fail load data cause'.$e->getMessage()
+            );
+        }
+    }
+
+    public function AdminGeneralUpdate(Request $request) {
+        $request->validate([
+            'contact_number' => 'required|max:50',
+            'working_hour' => 'required|max:100',
+            'instagram_link' => 'required|max:100',
+            'facebook_link' => 'max:100',
+            'twitter_link' => 'max:100',
+            'tiktok_pixel_script' => 'required'
+        ]);
+
+        $data = $request->only([
+            'contact_number',
+            'working_hour',
+            'instagram_link',
+            'facebook_link',
+            'twitter_link',
+            'tiktok_pixel_script'
+        ]);
+    
+        try {
+            $this->cmsHandlers->updateContentBySection($data, 'general');
+
+            return redirect()->back()
+            ->with(
+                'status','success',
+            )->with(
+                'message','success update general'
+            );
+        } catch (Exception $e) {
+            return redirect()->back()
+            ->with(
+                'status','fail',
+            )->with(
+                'message','fail update general' .$e->getMessage()
+            );
+        }
+    }
     
 }

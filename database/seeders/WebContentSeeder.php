@@ -79,6 +79,39 @@ class WebContentSeeder extends Seeder
             )
         ];
 
+        $houseLayout = [
+            'house_layout_small_title' => 'LAYOUT RUMAH',
+            'house_layout_big_title' => 'Layout Rumah',
+            'house_layout_description' => 'Layout yang kami rancangkan dengan se-efisien mungkin sesuai kebutuhan kalian dari 2 lantai hingga juga 3 lantai.',
+            'house_layout_list' => array(
+                array(
+                    'house_area_total' => '60/110 m2',
+                    'house_floor' => '2',
+                    'house_status' => 'Development',
+                    'house_bedroom' => '3',
+                    'house_bathroom' => '3',
+                    'house_carport' => '1'
+                ),
+                array(
+                    'house_area_total' => '60/140 m2',
+                    'house_floor' => '3',
+                    'house_status' => 'Development',
+                    'house_bedroom' => '4',
+                    'house_bathroom' => '4',
+                    'house_carport' => '1'
+                )
+            )
+        ];
+
+        $general = [
+            'contact_number' => '0818830153',
+            'working_hour' => 'Mon - Sun: 8AM - 8PM',
+            'instagram_link' => 'https://www.instagram.com/purinusakembangan/',
+            'facebook_link' => null,
+            'twitter_link' => null,
+            'tiktok_pixel_script' => "<script>\r\n!function (w, d, t) {\r\n  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=[\"page\",\"track\",\"identify\",\"instances\",\"debug\",\"on\",\"off\",\"once\",\"ready\",\"alias\",\"group\",\"enableCookie\",\"disableCookie\"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i=\"https://analytics.tiktok.com/i18n/pixel/events.js\";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement(\"script\");o.type=\"text/javascript\",o.async=!0,o.src=i+\"?sdkid=\"+e+\"&lib=\"+t;var a=document.getElementsByTagName(\"script\")[0];a.parentNode.insertBefore(o,a)};\r\n\r\n  ttq.load('CMIDVG3C77UFIL1RAC1G');\r\n  ttq.page();\r\n}(window, document, 'ttq');\r\n</script>"
+        ];
+
         $data = [
             [
                 'section' => 'concept',
@@ -91,6 +124,14 @@ class WebContentSeeder extends Seeder
             [
                 'section' => 'houseType',
                 'content' => json_encode($houseType)
+            ],
+            [
+                'section' => 'general',
+                'content' => json_encode($general)
+            ],
+            [
+                'section' => 'houseLayout',
+                'content' => json_encode($houseLayout)
             ]
         ];
 

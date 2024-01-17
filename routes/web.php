@@ -40,5 +40,7 @@ Route::middleware(['verifiedAdmin'])->group(function(){
     Route::post('/admin/cms-house-type/list', [CmsController::class, 'AdminHouseTypeStore'])->name('admin-house-type-cms-store');
     Route::patch('/admin/cms-house-type/list/{id}', [CmsController::class, 'AdminHouseTypeUpdateList'])->name('admin-house-type-cms-list-update');
     Route::delete('/admin/cms-house-type/list/{id}', [CmsController::class, 'AdminHouseTypeDelete'])->name('admin-house-type-cms-list-delete');
+    Route::get('/admin/general-cms', [CmsController::class, 'AdminGeneralView'])->name('admin-general-cms');
+    Route::patch('/admin/general-cms', [CmsController::class, 'AdminGeneralUpdate'])->name('admin-general-cms-update');
 });
 

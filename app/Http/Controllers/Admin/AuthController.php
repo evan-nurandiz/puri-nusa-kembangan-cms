@@ -13,7 +13,6 @@ class AuthController extends Controller
 {
     protected $authHandler;
 
-
     public function __construct(AuthHandler $authHandler){
         $this->authHandler = $authHandler;
     }
