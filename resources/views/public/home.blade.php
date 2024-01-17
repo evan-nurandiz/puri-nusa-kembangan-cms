@@ -59,7 +59,7 @@
         }
 
         .fab-icon {
-            margin-top: 16px;
+            margin-top: 10px;
         }
     </style>
 
