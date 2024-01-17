@@ -42,6 +42,27 @@
     <link rel="stylesheet" href="{{url('/assets/vendors/jquery-ui/jquery-ui.css')}}" />
     <link rel="stylesheet" href="{{url('/assets/vendors/timepicker/timePicker.css')}}" />
 
+    <style>
+        .floating {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            bottom: 100px;
+            right: 40px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .fab-icon {
+            margin-top: 16px;
+        }
+    </style>
+
     <!-- template styles -->
     <link rel="stylesheet" href="{{url('/assets/css/aports.css')}}" />
     <link rel="stylesheet" href="{{url('/assets/css/aports-responsive.css')}}" />
@@ -1289,6 +1310,9 @@
     <!-- /.search-popup -->
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="icon-right-arrow"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="floating" target="_blank">
+        <i class="fab fa-whatsapp fab-icon"></i>
+    </a>
 
     <script src="{{url('/assets/vendors/jquery/jquery-3.6.0.min.js')}}"></script>
     <script src="{{url('/assets/vendors/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
