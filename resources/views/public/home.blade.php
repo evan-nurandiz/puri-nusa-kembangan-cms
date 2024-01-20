@@ -398,8 +398,8 @@
                                 <span class="section-title__tagline">Keunggulan Utama</span>
                                 <h2 class="section-title__title">Fitur Utama <br> Purinusa Kembangan </h2>
                             </div>
-                            <p class="feature-one__text">Man braid hell of edison bulb four brunch subway <br> tile
-                                authentic, chillwave put a bird on it church-key <br> try-hard ramps heirloom.</p>
+                            <!-- <p class="feature-one__text">Man braid hell of edison bulb four brunch subway <br> tile
+                                authentic, chillwave put a bird on it church-key <br> try-hard ramps heirloom.</p> -->
                             <div class="feature-one__video-link">
                                 <a href="https://www.youtube.com/watch?v=_dozIuxnfX4" class="video-popup">
                                     <div class="feature-one__video-icon">
@@ -896,7 +896,7 @@
                                 <span class="section-title__tagline">contact now</span>
                                 <h2 class="section-title__title">Get in touch with us</h2>
                             </div>
-                            <div class="contact-one__person">
+                            <div class="contact-one__person" style="margin-bottom: 60px;">
                                 <div class="contact-one__person-content">
                                     <img src="{{asset('/assets/images/contact-image-1.svg')}}" alt="">
                                 </div>
