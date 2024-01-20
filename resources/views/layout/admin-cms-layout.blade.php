@@ -62,12 +62,12 @@
 													</a>
 												</li>
 												<li data-menu-item="modern-issue" class="menu-item">
-													<a class="h-full w-full flex items-center" href="{{route('admin-house-type-cms')}}">
+													<a class="h-full w-full flex items-center" href="{{route('admin-house-layout-cms')}}">
 														<span>Layout</span>
 													</a>
 												</li>
 												<li data-menu-item="modern-issue" class="menu-item">
-													<a class="h-full w-full flex items-center" href="modern-issue.html">
+													<a class="h-full w-full flex items-center" href="{{route('admin-house-type-cms')}}">
 														<span>Tipe Rumah</span>
 													</a>
 												</li>

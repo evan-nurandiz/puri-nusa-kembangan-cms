@@ -90,7 +90,8 @@ class WebContentSeeder extends Seeder
                     'house_status' => 'Development',
                     'house_bedroom' => '3',
                     'house_bathroom' => '3',
-                    'house_carport' => '1'
+                    'house_carport' => '1',
+                    'house_layout_image' => 'home-layout.png'
                 ),
                 array(
                     'house_area_total' => '60/140 m2',
@@ -98,7 +99,8 @@ class WebContentSeeder extends Seeder
                     'house_status' => 'Development',
                     'house_bedroom' => '4',
                     'house_bathroom' => '4',
-                    'house_carport' => '1'
+                    'house_carport' => '1',
+                    'house_layout_image' => 'home-layout-2.png'
                 )
             )
         ];

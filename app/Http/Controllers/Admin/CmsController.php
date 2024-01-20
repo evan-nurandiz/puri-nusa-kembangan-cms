@@ -376,5 +376,23 @@ class CmsController extends Controller
             );
         }
     }
+
+    public function AdminHouseLayoutView() {
+        try {
+            $content = $this->cmsHandlers->getContentBySection('houseLayout');
+            $content['content'] = json_decode($content['content']);
+
+            return view('admin.admin-house-layout-cms', [
+                'content' => $content
+            ]);
+        } catch (Exception $e) 
+        {
+            return redirect()->back()->with(
+                'status','fail',
+            )->with(
+                'message','fail load data cause'.$e->getMessage()
+            );
+        }
+    }
     
 }

@@ -126,22 +126,22 @@
                     <div class="main-menu__wrapper-inner">
                         <div class="main-menu__left">
                             <div class="main-menu__logo">
-                                <a href="index.html"><img src="{{asset('assets/images/main-icon.svg')}}" alt=""></a>
+                                <a href="/"><img src="{{asset('assets/images/main-icon.svg')}}" alt=""></a>
                             </div>
                         </div>
                         <!-- <div class="main-menu__main-menu-box">
                             <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                             <ul class="main-menu__list">
                                 <li class="dropdown current">
-                                    <a href="index.html">Home </a>
+                                    <a href="/">Home </a>
                                     <ul class="shadow-box">
-                                        <li><a href="index.html">Home One</a></li>
+                                        <li><a href="/">Home One</a></li>
                                         <li><a href="index2.html">Home Two</a></li>
                                         <li><a href="index3.html">Home Three</a></li>
                                         <li class="dropdown">
                                             <a href="#">Header Styles</a>
                                             <ul>
-                                                <li><a href="index.html">Header One</a></li>
+                                                <li><a href="/">Header One</a></li>
                                                 <li><a href="index2.html">Header Two</a></li>
                                                 <li><a href="index3.html">Header Three</a></li>
                                             </ul>
@@ -149,12 +149,12 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="about.html">About</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">About</a>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#">Pages</a>
                                     <ul class="shadow-box">
-                                        <li><a href="services.html">Services</a>
+                                        <li><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Services</a>
                                         </li>
                                         <li><a href="the-building.html">The Building</a>
                                         </li>
@@ -166,14 +166,14 @@
                                     <a href="#">Appartments</a>
                                     <ul class="shadow-box">
                                         <li><a href="apartments.html">Apartments</a></li>
-                                        <li><a href="apartment-details.html">Apartment Details</a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Apartment Details</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#">News</a>
                                     <ul class="shadow-box">
                                         <li><a href="news.html">News</a></li>
-                                        <li><a href="news-details.html">News Details</a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">News Details</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -323,7 +323,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <a href="about.html" class="thm-btn about-one__btn">PELAJARI LEBIH LANJUT</a>
+                            <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="thm-btn about-one__btn">PELAJARI LEBIH LANJUT</a>
                         </div>
                     </div>
                 </div>
@@ -401,7 +401,7 @@
                             <p class="feature-one__text">Man braid hell of edison bulb four brunch subway <br> tile
                                 authentic, chillwave put a bird on it church-key <br> try-hard ramps heirloom.</p>
                             <div class="feature-one__video-link">
-                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
+                                <a href="https://www.youtube.com/watch?v=_dozIuxnfX4" class="video-popup">
                                     <div class="feature-one__video-icon">
                                         <span class="fa fa-play"></span>
                                         <i class="ripple"></i>
@@ -442,11 +442,11 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-residential"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="services.html">Smart living</a></h3>
+                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Smart living</a></h3>
                                             <p class="feature-one__text">When nothing prevents our being
                                                 able to we like best, every pleasure to be welcomed & every.</p>
                                             <div class="feature-one__btn">
-                                                <a href="services.html"> <i class="fa fa-arrow-right"></i>Read More</a>
+                                                <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.l"> <i class="fa fa-arrow-right"></i>Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -459,12 +459,12 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-sustainable"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="services.html">Eco construction</a>
+                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Eco construction</a>
                                             </h3>
                                             <p class="feature-one__text">When nothing prevents our being
                                                 able to we like best, every pleasure to be welcomed & every.</p>
                                             <div class="feature-one__btn">
-                                                <a href="services.html"> <i class="fa fa-arrow-right"></i>Read More</a>
+                                                <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit."> <i class="fa fa-arrow-right"></i>Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -477,12 +477,12 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-world"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="services.html">Attractive
+                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Attractive
                                                     location</a></h3>
                                             <p class="feature-one__text">When nothing prevents our being
                                                 able to we like best, every pleasure to be welcomed & every.</p>
                                             <div class="feature-one__btn">
-                                                <a href="services.html"> <i class="fa fa-arrow-right"></i>Read More</a>
+                                                <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit."> <i class="fa fa-arrow-right"></i>Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -495,12 +495,12 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-home-automation"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="services.html">Modern technology</a>
+                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Modern technology</a>
                                             </h3>
                                             <p class="feature-one__text">When nothing prevents our being
                                                 able to we like best, every pleasure to be welcomed & every.</p>
                                             <div class="feature-one__btn">
-                                                <a href="services.html"> <i class="fa fa-arrow-right"></i>Read More</a>
+                                                <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit."> <i class="fa fa-arrow-right"></i>Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -656,14 +656,14 @@
                             <div class="apartments-one__img">
                                 <img src="{{asset('assets/images/house-display-1.png')}}" alt="">
                                 <div class="apartments-one__title-box">
-                                    <h3 class="apartments-one__title"><a href="apartment-details.html">Tipe 2 Lantai</a></h3>
+                                    <h3 class="apartments-one__title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Tipe 2 Lantai</a></h3>
                                 </div>
                                 <div class="apartments-one__hover">
-                                    <h3 class="apartments-one__hover-title"><a href="apartment-details.html">Tipe 2 Lantai</a></h3>
+                                    <h3 class="apartments-one__hover-title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Tipe 2 Lantai</a></h3>
                                     <p class="apartments-one__hover-text">There are many type of variations <br> pass
                                         not available</p>
                                     <div class="apartments-one__arrow">
-                                        <a href="apartment-details.html"><span class="icon-right-arrow"></span> </a>
+                                        <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit."><span class="icon-right-arrow"></span> </a>
                                     </div>
                                 </div>
                             </div>
@@ -676,14 +676,14 @@
                             <div class="apartments-one__img">
                                 <img src="{{asset('assets/images/house-display-2.png')}}" alt="">
                                 <div class="apartments-one__title-box">
-                                    <h3 class="apartments-one__title"><a href="apartment-details.html">Tipe 3 Lantai</a></h3>
+                                    <h3 class="apartments-one__title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Tipe 3 Lantai</a></h3>
                                 </div>
                                 <div class="apartments-one__hover">
-                                    <h3 class="apartments-one__hover-title"><a href="apartment-details.html">Tipe 3 Lantai</a></h3>
+                                    <h3 class="apartments-one__hover-title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Tipe 3 Lantai</a></h3>
                                     <p class="apartments-one__hover-text">There are many type of variations <br> pass
                                         not available</p>
                                     <div class="apartments-one__arrow">
-                                        <a href="apartment-details.html"><span class="icon-right-arrow"></span> </a>
+                                        <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit."><span class="icon-right-arrow"></span> </a>
                                     </div>
                                 </div>
                             </div>
@@ -901,8 +901,8 @@
                                     <img src="{{asset('/assets/images/contact-image-1.svg')}}" alt="">
                                 </div>
                             </div>
-                            <p class="contact-one__text-1">Lorem ipsum dolor sit amet, consecte adipiscing elit. In hac
-                                habitasse platea dictumst. Duis porta, quam ut finibus ultrices.</p>
+                            <!-- <p class="contact-one__text-1">Lorem ipsum dolor sit amet, consecte adipiscing elit. In hac
+                                habitasse platea dictumst. Duis porta, quam ut finibus ultrices.</p> -->
                             <ul class="list-unstyled contact-one__list">
                                 <li>
                                     <div class="icon">
@@ -910,7 +910,7 @@
                                     </div>
                                     <div class="content">
                                         <p>Have any question?</p>
-                                        <h4> <span>Free</span> <a href="tel:230009850">0818 830 153</a></h4>
+                                        <h4> <span>Free</span> <a href="tel:0818830153">0818 830 153</a></h4>
                                     </div>
                                 </li>
                                 <li>
@@ -949,7 +949,7 @@
                                                     <textarea name="message" placeholder="Write message"></textarea>
                                                 </div>
                                                 <div class="contact-one__btn-box">
-                                                    <a href="about.html" class="thm-btn contact-one__btn">Send a
+                                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="thm-btn contact-one__btn">Send a
                                                         Message</a>
                                                 </div>
                                             </div>
@@ -988,9 +988,9 @@
                                         Sambut Momen Gratis PPN, Purinusa Jayakusuma Rilis Hunian Baru di Jakbar</a></h3>
                                 </div>
                                 <div class="news-one__bottom">
-                                    <a href="news-details.html" class="news-one__more"> <i
+                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="news-one__more"> <i
                                             class="fa fa-arrow-right"></i> Read More</a>
-                                    <a href="news-details.html" class="news-one__comments"> <i
+                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="news-one__comments"> <i
                                             class="fas fa-comments"></i> 2 Comments</a>
                                 </div>
                             </div>
@@ -1016,9 +1016,9 @@
                                     </a></h3>
                                 </div>
                                 <div class="news-one__bottom">
-                                    <a href="news-details.html" class="news-one__more"> <i
+                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="news-one__more"> <i
                                             class="fa fa-arrow-right"></i> Read More</a>
-                                    <a href="news-details.html" class="news-one__comments"> <i
+                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="news-one__comments"> <i
                                             class="fas fa-comments"></i> 2 Comments</a>
                                 </div>
                             </div>
@@ -1041,9 +1041,9 @@
                                         Sambut Momen Gratis PPN, Purinusa Jayakusuma Rilis Hunian Baru di Jakbar</a></h3>
                                 </div>
                                 <div class="news-one__bottom">
-                                    <a href="news-details.html" class="news-one__more"> <i
+                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="news-one__more"> <i
                                             class="fa fa-arrow-right"></i> Read More</a>
-                                    <a href="news-details.html" class="news-one__comments"> <i
+                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="news-one__comments"> <i
                                             class="fas fa-comments"></i> 2 Comments</a>
                                 </div>
                             </div>
@@ -1183,11 +1183,11 @@
                                         <h3 class="footer-widget__title">Explore</h3>
                                     </div>
                                     <ul class="footer-widget__Explore-list list-unstyled">
-                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">About</a></li>
                                         <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="about.html">Custom Widget</a></li>
-                                        <li><a href="about.html">Shortcodes</a></li>
-                                        <li><a href="about.html">Blank page</a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Custom Widget</a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Shortcodes</a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Blank page</a></li>
                                     </ul>
                                 </div>
                             </div> -->
@@ -1255,7 +1255,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="{{asset('assets/images/logo-3.png')}}" width="122"
+                <a href="/" aria-label="logo image"><img src="{{asset('assets/images/logo-3.png')}}" width="122"
                         alt="" /></a>
             </div>
             <!-- /.logo-box -->
@@ -1263,14 +1263,14 @@
             <!-- /.mobile-nav__container -->
 
             <ul class="mobile-nav__contact list-unstyled">
-                <li>
+                <!-- <li>
                     <i class="fa fa-envelope"></i>
                     <a href="mailto:needhelp@packageName__.com">needhelp@agrion.com</a>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <i class="fa fa-phone-alt"></i>
                     <a href="tel:666-888-0000">666 888 0000</a>
-                </li>
+                </li> -->
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
                 <div class="mobile-nav__social">
