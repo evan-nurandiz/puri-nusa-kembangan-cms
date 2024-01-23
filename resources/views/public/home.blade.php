@@ -1137,7 +1137,7 @@
                                                 <span class="fas fa-phone-alt"></span>
                                             </div>
                                             <div class="text">
-                                                <p><a href="tel:{{$general['content']->contact_number}}">{{$general['content']->contact_number}}</a></p>
+                                                <p><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">{{$general['content']->contact_number}}</a></p>
                                             </div>
                                         </li>
                                         <li>
