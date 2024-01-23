@@ -68,7 +68,7 @@
 <div class="modal fade" id="edit-house-type-title" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog dialog h-[520px]">
         <div class="dialog-content">
-            <form action="{{route('admin-house-type-cms-update')}}" method="POST">
+            <form action="{{route('admin-house-layout-cms-update')}}" method="POST">
                 @csrf
                 @method('PATCH')
                 <input type="hidden" name="type" value="edit-title">
@@ -106,34 +106,55 @@
 </div>
 
 <div class="modal fade" id="create-edit-house-type" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog dialog h-[720px]">
+    <div class="modal-dialog dialog h-[1060px]">
         <div class="dialog-content">
             <form action="" id="form-edit-create-list" method="POST" enctype="multipart/form-data">
                 @csrf
-                <input type="hidden" name="house_type_id" value="">
+                <input type="hidden" name="house_layout_id" value="">
                 <x-text-input
-                    inputName="house_type"
-                    labelName="House Type"
-                    placeHolder="Enter House Type"
+                    inputName="house_area_total"
+                    labelName="House Area Total"
+                    placeHolder="Enter House Area Total"
                     inputValue=""
                     isImportant="true"
                 />
                 <x-text-input
-                    inputName="house_type_description"
-                    labelName="House Type Description"
-                    placeHolder="Enter Big Title"
+                    inputName="house_floor"
+                    labelName="House Floor"
+                    placeHolder="Enter House Floor"
+                    inputValue=""
+                    isImportant="true"
+                />
+                <x-text-input
+                    inputName="house_status"
+                    labelName="House Status"
+                    placeHolder="Enter House Status"
+                    inputValue=""
+                    isImportant="true"
+                />
+                <x-text-input
+                    inputName="house_bedroom"
+                    labelName="House Bedroom"
+                    placeHolder="Enter House Bedroom"
+                    inputValue=""
+                    isImportant="true"
+                />
+                <x-text-input
+                    inputName="house_bathroom"
+                    labelName="House Bathroom"
+                    placeHolder="Enter House Bathroom"
+                    inputValue=""
+                    isImportant="true"
+                />
+                <x-text-input
+                    inputName="house_carport"
+                    labelName="House Carport"
+                    placeHolder="Enter House Caport"
                     inputValue=""
                     isImportant="true"
                 />
                 <div id="image-upload-container">
                 </div>
-                <x-text-input
-                    inputName="house_link"
-                    labelName="House Type Link"
-                    placeHolder="Enter House Link"
-                    inputValue=""
-                    isImportant=""
-                />
                 <div class="form-item vertical"><label class="form-label"></label>
                     <div class="flex justify-end">
                         <button class="btn btn-default" type="submit">
@@ -148,41 +169,47 @@
 
 @section('script')
 <script src="{{url('/js/single-input-image-script.js')}}"></script>
-<!-- <script>
+<script>
     const editModal = (event) => {
-        const image =  event.target.getAttribute("data-bs-image");
-        document.querySelector('input[name="house_type_id"]').value = event.target.getAttribute("data-bs-id");
-        document.querySelector('input[name="house_type"]').value = event.target.getAttribute("data-bs-house-type");
-        document.querySelector('input[name="house_type_description"]').value = event.target.getAttribute("data-bs-house-type-description");
+        const image =  event.target.getAttribute("data-bs-house-layout-image");
+        document.querySelector('input[name="house_layout_id"]').value = event.target.getAttribute("data-bs-id");
+        document.querySelector('input[name="house_area_total"]').value = event.target.getAttribute("data-bs-house-area-total");
+        document.querySelector('input[name="house_floor"]').value = event.target.getAttribute("data-bs-house-floor");
+        document.querySelector('input[name="house_bedroom"]').value = event.target.getAttribute("data-bs-house-bedroom");
+        document.querySelector('input[name="house_bathroom"]').value = event.target.getAttribute("data-bs-house-bathroom");
+        document.querySelector('input[name="house_carport"]').value = event.target.getAttribute("data-bs-house-carport");
+        document.querySelector('input[name="house_status"]').value = event.target.getAttribute("data-bs-house-status");
         document.getElementById("image-upload-container").innerHTML = `
                 <x-image-input-single 
-                    inputName="house_type_image_input" 
-                    labelName="House Type Image"
-                    previewId="house_type_image_preview"
-                    inputId="house_type_image_input"
-                    filenameLabel="house_type_image_file_name"
+                    inputName="house_layout_image_input" 
+                    labelName="House Layout Image"
+                    previewId="house_layout_image_preview"
+                    inputId="house_layout_image_input"
+                    filenameLabel="house_layout_image_file_name"
                     fileImagePreview="${image}"
                 />
         `
-        document.querySelector('input[name="house_link"]').value = event.target.getAttribute("data-bs-house-type-link");
     }
 
     const createModal = (event) => {
         document.getElementById('form-edit-create-list').action = '{{route("admin-house-type-cms-store")}}'
-        document.querySelector('input[name="house_type_id"]').value = 0;
-        document.querySelector('input[name="house_type"]').value = null;
-        document.querySelector('input[name="house_type_description"]').value = null;
+        document.querySelector('input[name="house_layout_id"]').value = 0;
+        document.querySelector('input[name="house_area_total"]').value = null;
+        document.querySelector('input[name="house_floor"]').value = null;
+        document.querySelector('input[name="house_bedroom"]').value = null;
+        document.querySelector('input[name="house_bathroom"]').value = null;
+        document.querySelector('input[name="house_carport"]').value = null;
+        document.querySelector('input[name="house_status"]').value = null;
         document.getElementById("image-upload-container").innerHTML = `
-            <x-image-input-single 
-                inputName="house_type_image_input" 
-                labelName="House Type Image"
-                previewId="house_type_image_preview"
-                inputId="house_type_image_input"
-                filenameLabel="house_type_image_file_name"
-                fileImagePreview=""
-            />
+        <x-image-input-single 
+                    inputName="house_layout_image_input" 
+                    labelName="House Layout Image"
+                    previewId="house_layout_image_preview"
+                    inputId="house_layout_image_input"
+                    filenameLabel="house_layout_image_file_name"
+                    fileImagePreview=""
+                />
         `
-        document.querySelector('input[name="house_link"]').value = null;
     }
-</script> -->
+</script>
 @endsection('script')

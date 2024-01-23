@@ -97,6 +97,7 @@
         <div class="dialog-content">
             <form action="" id="form-edit-create-list" method="POST" enctype="multipart/form-data">
                 @csrf
+                <input type="hidden" name="_method" id="_method" value="">
                 <input type="hidden" name="house_type_id" value="">
                 <x-text-input
                     inputName="house_type"
@@ -138,6 +139,7 @@
 <script>
     const editModal = (event) => {
         const image =  event.target.getAttribute("data-bs-image");
+        document.getElementById('form-edit-create-list').action = '{{route("admin-house-type-cms-list-update")}}'
         document.querySelector('input[name="house_type_id"]').value = event.target.getAttribute("data-bs-id");
         document.querySelector('input[name="house_type"]').value = event.target.getAttribute("data-bs-house-type");
         document.querySelector('input[name="house_type_description"]').value = event.target.getAttribute("data-bs-house-type-description");

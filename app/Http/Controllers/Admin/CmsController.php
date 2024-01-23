@@ -317,8 +317,8 @@ class CmsController extends Controller
         }
     }
 
-    public function AdminHouseTypeUpdateList(Request $request, $id) {
-
+    public function AdminHouseTypeUpdateList(Request $request) {
+        return $request;
     } 
 
     public function AdminGeneralView() {
@@ -394,5 +394,114 @@ class CmsController extends Controller
             );
         }
     }
+
+    public function AdminHouseLayoutUpdate(Request $request) {
+        if ($request->get('type') === 'edit-title') {
+            $request->validate([
+                'house_layout_small_title' => 'required|max:50',
+                'house_layout_big_title' => 'required|max:100',
+                'house_layout_description' => 'required|max:400'
+            ]);
+
+            $content = $this->cmsHandlers->getContentBySection('houseLayout');
+            $content['content'] = json_decode($content['content']);
+
+            $data = $content['content'];
+            $data->house_type_small_title = $request->get('house_layout_small_title');
+            $data->house_type_big_title = $request->get('house_layout_big_title');
+            $data->house_layout_description = $request->get('house_layout_description');
+        }
     
+        try {
+            $this->cmsHandlers->updateContentBySection($data, 'houseLayout');
+
+            return redirect()->back()
+            ->with(
+                'status','success',
+            )->with(
+                'message','success update house layout'
+            );
+        } catch (Exception $e) {
+            return redirect()->back()
+            ->with(
+                'status','fail',
+            )->with(
+                'message','fail update house layout' .$e->getMessage()
+            );
+        }
+    }
+    
+    public function AdminHouseLayoutDelete($id) {
+        try {
+            $content = $this->cmsHandlers->getContentBySection('houseLayout');
+            $content['content'] = json_decode($content['content']);
+    
+            $data = $content['content'];
+    
+            $this->uploadHelpers->deleteSingleImage($data->house_layout_list[$id - 1]->house_type_image);
+            array_splice($data->house_layout_list, ($id - 1), 1);
+
+            $this->cmsHandlers->updateContentBySection($data, 'houseLayout');
+
+            return redirect()->back()
+            ->with(
+                'status','success',
+            )->with(
+                'message','success delete house layout'
+            );
+        } catch (Exception $e) {
+            return redirect()->back()
+            ->with(
+                'status','fail',
+            )->with(
+                'message','fail delete house layout' .$e->getMessage()
+            );
+        }
+    }
+    
+    public function AdminHouseLayoutStore(Request $request) {
+        $request->validate([
+            'house_type' => 'required|max:50',
+            'house_type_description' => 'required|max:100',
+            'house_type_image_input' => 'required|file|mimes:jpeg,png,jpg|max:2048',
+            'house_link' => 'max:50'
+        ]);
+
+        $payload = $request->only([
+            'house_type',
+            'house_type_description',
+            'house_link'
+        ]);
+
+        $payload = $this->generalHelper->object_to_array($payload);
+
+        if ($request->hasFile('house_type_image_input')) {
+            $filename = $this->uploadHelpers->uploadSingleImage($request, 'house_type_image_input');
+            $payload['house_type_image'] = $filename;
+        }
+
+        try {
+            $content = $this->cmsHandlers->getContentBySection('houseType');
+            $content['content'] = json_decode($content['content']);
+    
+            $data = $content['content'];
+            array_push($data->house_types_list, $payload);
+
+            $this->cmsHandlers->updateContentBySection($data, 'houseType');
+
+            return redirect()->back()
+            ->with(
+                'status','success',
+            )->with(
+                'message','success create house type'
+            );
+        } catch (Exception $e) {
+            return redirect()->back()
+            ->with(
+                'status','fail',
+            )->with(
+                'message','fail create house type' .$e->getMessage()
+            );
+        }
+    }
 }
