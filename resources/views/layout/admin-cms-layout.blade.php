@@ -374,7 +374,7 @@
 						<div class="h-full flex flex-auto flex-col justify-between">
 							<!-- Content start -->
 							<main class="h-full bg-[#F9FAFB]">
-								<div class="page-container relative h-full flex flex-auto flex-col px-4 sm:px-6 md:px-8 py-4 sm:py-6">
+								<div class="page-container relative h-full flex flex-auto flex-col px-4 sm:px-6 md:px-8 py-4 sm:py-6 relative">
 									@if(session()->has('status'))
 										@if (session()->get('status') == 'success')
 										<div class="alert alert-dismissible fade show alert-success">
@@ -409,6 +409,7 @@
 										@yield('add-new-content')
 									</div>
                                     @yield('content')
+									<p class="text-[#8A898E] absolute bottom-[14px] font-normal">Copyright ©  {{ \Carbon\Carbon::now()->year }} Puri Nusa All rights reserved.</p>
                                 </div>
 							</main>
 							<!-- Content end -->
