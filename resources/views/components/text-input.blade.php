@@ -1,11 +1,11 @@
 <div class="form-item vertical">
-    <label class="form-label mb-2">{{$labelName}} 
+    <label class="form-label mb-2 text-[14px] text-[#8A898E]">{{$labelName}} 
         @if($isImportant === 'true')
         <span class="text-red-500"> *</span>
         @endif
     </label>
     <div class="mb-2">
-        <input class="input" type="text" name="{{$inputName}}" placeholder="{{$placeHolder}}" value="{{ isset($inputValue) ? $inputValue : ''}}" >
+        <input class="input text-[#32343B]" type="text" name="{{$inputName}}" placeholder="{{$placeHolder}}" value="{{ isset($inputValue) ? $inputValue : ''}}" >
     </div>
     @error($inputName)
     <div class="alert alert-danger">

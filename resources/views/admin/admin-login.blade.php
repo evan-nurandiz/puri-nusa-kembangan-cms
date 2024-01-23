@@ -26,7 +26,7 @@
     <body>
         <div id="root">
             <!-- App Layout-->
-            <div class="app-layout-blank flex flex-auto flex-col h-[100vh]">
+            <div class="app-layout-blank flex flex-auto flex-col h-[100vh] bg-cover" style="background-image: url('{{ asset('assets/images/background-auth.svg')}}');">
                 <main class="h-full">
                     <div class="page-container relative h-full flex flex-auto flex-col">
                         <div class="h-full">
@@ -39,9 +39,10 @@
                                             </div>
                                         </div>
                                         <div class="text-center">
+                                            <img src="{{url('/assets/icon/main-logo.svg')}}" alt="" class="mx-auto w-[180.524px] h-[72px] mb-[16px]">
                                             <div class="mb-4">
-                                                <h3 class="mb-1">Welcome back!</h3>
-                                                <p>Please enter your credentials to sign in!</p>
+                                                <h3 class="text-[#344643] text-[16px] font-bold leading-[24px]">Welcome back!</h3>
+                                                <p class="text-[#8A898E] text-[14px] font-bold leading-[24px]">Please enter your credentials to sign in!</p>
                                             </div>
                                             @if(session()->has('status'))
                                                 @if (session()->get('status') == 'fail')
@@ -59,35 +60,40 @@
                                                     @csrf
                                                     <div class="form-container vertical">
                                                         <div class="form-item vertical">
-                                                            <label class="form-label mb-2">User Name</label>
-                                                            <div>
+                                                            <label class="form-label mb-2">Email</label>
+                                                            <div class="relativ">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none" class="absolute z-10 bottom-[16px] left-[16px]">
+                                                                    <path d="M14.5 5V12C14.5 12.8284 13.8284 13.5 13 13.5H3C2.17157 13.5 1.5 12.8284 1.5 12V5M14.5 5C14.5 4.17157 13.8284 3.5 13 3.5H3C2.17157 3.5 1.5 4.17157 1.5 5M14.5 5V5.16181C14.5 5.6827 14.2298 6.1663 13.7861 6.43929L8.78615 9.51622C8.30404 9.8129 7.69596 9.8129 7.21385 9.51622L2.21385 6.43929C1.77023 6.1663 1.5 5.6827 1.5 5.16181V5" stroke="#8A898E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
                                                                 <input
                                                                     id="email"
-                                                                    class="input"
+                                                                    class="pl-[42px] pr-[16px] py-[13px] w-full rounded-[6px] border-[#8A898E] border-[0.5px] text-[16px] text-[#8A898E]"
                                                                     type="email"
                                                                     name="email"
                                                                     autocomplete="off"
-                                                                    placeholder="User Name"
+                                                                    placeholder="Email"
                                                                     value=""
                                                                 >
                                                             </div>
                                                         </div>
                                                         <div class="form-item vertical">
                                                             <label class="form-label mb-2">Password</label>
-                                                            <div>
-                                                                <span class="input-wrapper">
-                                                                    <input
-                                                                        class="input pr-8"
-                                                                        type="password"
-                                                                        name="password"
-                                                                        autocomplete="off"
-                                                                        placeholder="Password"
-                                                                        value=""
-                                                                    >
-                                                                </span>
+                                                            <div class="relativ">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none" class="absolute z-10 bottom-[16px] left-[16px]">
+                                                                    <path d="M14.5 5V12C14.5 12.8284 13.8284 13.5 13 13.5H3C2.17157 13.5 1.5 12.8284 1.5 12V5M14.5 5C14.5 4.17157 13.8284 3.5 13 3.5H3C2.17157 3.5 1.5 4.17157 1.5 5M14.5 5V5.16181C14.5 5.6827 14.2298 6.1663 13.7861 6.43929L8.78615 9.51622C8.30404 9.8129 7.69596 9.8129 7.21385 9.51622L2.21385 6.43929C1.77023 6.1663 1.5 5.6827 1.5 5.16181V5" stroke="#8A898E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                                <input
+                                                                    id="password"
+                                                                    class="pl-[42px] pr-[16px] py-[13px] w-full rounded-[6px] border-[#8A898E] border-[0.5px] text-[16px] text-[#8A898E]"
+                                                                    type="password"
+                                                                    name="password"
+                                                                    autocomplete="off"
+                                                                    placeholder="Password"
+                                                                    value=""
+                                                                >
                                                             </div>
                                                         </div>
-                                                        <button class="btn btn-solid w-full" type="submit">Sign In</button>
+                                                        <button class="btn bg-[#344643] text-[16px] text-[#FFFFFF] font-bold w-full" type="submit">Login</button>
                                                     </div>
                                                 </form>
                                             </div>

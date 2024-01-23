@@ -63,8 +63,6 @@
         </tbody>
     </table>
 </div>
-@endsection
-
 <div class="modal fade" id="edit-house-type-title" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog dialog h-[520px]">
         <div class="dialog-content">
@@ -166,6 +164,9 @@
         </div>
     </div>
 </div>
+@endsection
+
+
 
 @section('script')
 <script src="{{url('/js/single-input-image-script.js')}}"></script>
@@ -187,6 +188,7 @@
                     inputId="house_layout_image_input"
                     filenameLabel="house_layout_image_file_name"
                     fileImagePreview="${image}"
+                    fileDefaultValue=""
                 />
         `
     }
@@ -208,6 +210,7 @@
                     inputId="house_layout_image_input"
                     filenameLabel="house_layout_image_file_name"
                     fileImagePreview=""
+                    fileDefaultValue=""
                 />
         `
     }

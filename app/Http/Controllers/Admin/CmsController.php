@@ -271,6 +271,32 @@ class CmsController extends Controller
         }
     }
 
+    public function AdminHouseTypeCreateView() {
+        return view('admin.admin-house-type-edit', [
+            'content' => null
+        ]);
+    }
+
+    public function AdminHouseTypeEditView($id) {
+        try {
+            $content = $this->cmsHandlers->getContentBySection('houseType');
+            $content['content'] = json_decode($content['content']);
+
+            $content['content']->house_types_list[$id]->house_type_id = $id;
+
+            return view('admin.admin-house-type-edit', [
+                'content' => $content['content']->house_types_list[$id]
+            ]);
+        } catch (Exception $e) 
+        {
+            return redirect()->back()->with(
+                'status','fail',
+            )->with(
+                'message','fail load data cause'.$e->getMessage()
+            );
+        }
+    }
+
     public function AdminHouseTypeStore(Request $request) {
         $request->validate([
             'house_type' => 'required|max:50',
@@ -317,8 +343,50 @@ class CmsController extends Controller
         }
     }
 
-    public function AdminHouseTypeUpdateList(Request $request) {
-        return $request;
+    public function AdminHouseTypeUpdateList(Request $request, $id) {
+        $request->validate([
+            'house_type' => 'required|max:50',
+            'house_type_description' => 'required|max:100',
+            'house_type_image_input' => 'file|mimes:jpeg,png,jpg|max:2048',
+            'house_type_image' => 'required',
+            'house_link' => 'max:50'
+        ]);
+
+        $payload = $request->only([
+            'house_link',
+            'house_type',
+            'house_type_image',
+            'house_type_description'
+        ]);
+
+        if ($request->hasFile('house_type_image_input')) {
+            $filename = $this->uploadHelpers->uploadSingleImage($request, 'house_type_image_input');
+            $payload['house_type_image'] = $filename;
+        }
+
+        try {
+            $content = $this->cmsHandlers->getContentBySection('houseType');
+            $content['content'] = json_decode($content['content']);
+    
+            $data = $content['content'];
+            $data->house_types_list[$id] = $payload;
+
+            $this->cmsHandlers->updateContentBySection($data, 'houseType');
+
+            return redirect()->back()
+            ->with(
+                'status','success',
+            )->with(
+                'message','success create house type'
+            );
+        } catch (Exception $e) {
+            return redirect()->back()
+            ->with(
+                'status','fail',
+            )->with(
+                'message','fail create house type' .$e->getMessage()
+            );
+        }
     } 
 
     public function AdminGeneralView() {
@@ -472,6 +540,8 @@ class CmsController extends Controller
             'house_type_description',
             'house_link'
         ]);
+        
+        return $payload;
 
         $payload = $this->generalHelper->object_to_array($payload);
 
