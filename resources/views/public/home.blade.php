@@ -149,12 +149,12 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">About</a>
+                                    <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">About</a>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#">Pages</a>
                                     <ul class="shadow-box">
-                                        <li><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Services</a>
+                                        <li><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">Services</a>
                                         </li>
                                         <li><a href="the-building.html">The Building</a>
                                         </li>
@@ -166,14 +166,14 @@
                                     <a href="#">Appartments</a>
                                     <ul class="shadow-box">
                                         <li><a href="apartments.html">Apartments</a></li>
-                                        <li><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Apartment Details</a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">Apartment Details</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#">News</a>
                                     <ul class="shadow-box">
                                         <li><a href="news.html">News</a></li>
-                                        <li><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">News Details</a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">News Details</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -187,7 +187,7 @@
                                     <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
                                 </div> -->
                                 <div class="main-menu__btn-box">
-                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="thm-btn main-menu__btn" target="_blank">JADWALKAN VISIT</a>
+                                    <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?" class="thm-btn main-menu__btn" target="_blank">JADWALKAN VISIT</a>
                                 </div>
                             </div>
                         </div>
@@ -323,7 +323,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="thm-btn about-one__btn">PELAJARI LEBIH LANJUT</a>
+                            <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?" class="thm-btn about-one__btn">PELAJARI LEBIH LANJUT</a>
                         </div>
                     </div>
                 </div>
@@ -442,11 +442,11 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-residential"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Smart living</a></h3>
+                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">Smart living</a></h3>
                                             <p class="feature-one__text">When nothing prevents our being
                                                 able to we like best, every pleasure to be welcomed & every.</p>
                                             <div class="feature-one__btn">
-                                                <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.l"> <i class="fa fa-arrow-right"></i>Read More</a>
+                                                <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?l"> <i class="fa fa-arrow-right"></i>Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -459,12 +459,12 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-sustainable"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Eco construction</a>
+                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">Eco construction</a>
                                             </h3>
                                             <p class="feature-one__text">When nothing prevents our being
                                                 able to we like best, every pleasure to be welcomed & every.</p>
                                             <div class="feature-one__btn">
-                                                <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit."> <i class="fa fa-arrow-right"></i>Read More</a>
+                                                <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?"> <i class="fa fa-arrow-right"></i>Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -477,12 +477,12 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-world"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Attractive
+                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">Attractive
                                                     location</a></h3>
                                             <p class="feature-one__text">When nothing prevents our being
                                                 able to we like best, every pleasure to be welcomed & every.</p>
                                             <div class="feature-one__btn">
-                                                <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit."> <i class="fa fa-arrow-right"></i>Read More</a>
+                                                <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?"> <i class="fa fa-arrow-right"></i>Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -495,12 +495,12 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-home-automation"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Modern technology</a>
+                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">Modern technology</a>
                                             </h3>
                                             <p class="feature-one__text">When nothing prevents our being
                                                 able to we like best, every pleasure to be welcomed & every.</p>
                                             <div class="feature-one__btn">
-                                                <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit."> <i class="fa fa-arrow-right"></i>Read More</a>
+                                                <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?"> <i class="fa fa-arrow-right"></i>Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -656,14 +656,14 @@
                             <div class="apartments-one__img">
                                 <img src="{{asset('assets/images/house-display-1.png')}}" alt="">
                                 <div class="apartments-one__title-box">
-                                    <h3 class="apartments-one__title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Tipe 2 Lantai</a></h3>
+                                    <h3 class="apartments-one__title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">Tipe 2 Lantai</a></h3>
                                 </div>
                                 <div class="apartments-one__hover">
-                                    <h3 class="apartments-one__hover-title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Tipe 2 Lantai</a></h3>
+                                    <h3 class="apartments-one__hover-title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">Tipe 2 Lantai</a></h3>
                                     <p class="apartments-one__hover-text">There are many type of variations <br> pass
                                         not available</p>
                                     <div class="apartments-one__arrow">
-                                        <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit."><span class="icon-right-arrow"></span> </a>
+                                        <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?"><span class="icon-right-arrow"></span> </a>
                                     </div>
                                 </div>
                             </div>
@@ -676,14 +676,14 @@
                             <div class="apartments-one__img">
                                 <img src="{{asset('assets/images/house-display-2.png')}}" alt="">
                                 <div class="apartments-one__title-box">
-                                    <h3 class="apartments-one__title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Tipe 3 Lantai</a></h3>
+                                    <h3 class="apartments-one__title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">Tipe 3 Lantai</a></h3>
                                 </div>
                                 <div class="apartments-one__hover">
-                                    <h3 class="apartments-one__hover-title"><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Tipe 3 Lantai</a></h3>
+                                    <h3 class="apartments-one__hover-title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">Tipe 3 Lantai</a></h3>
                                     <p class="apartments-one__hover-text">There are many type of variations <br> pass
                                         not available</p>
                                     <div class="apartments-one__arrow">
-                                        <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit."><span class="icon-right-arrow"></span> </a>
+                                        <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?"><span class="icon-right-arrow"></span> </a>
                                     </div>
                                 </div>
                             </div>
@@ -914,9 +914,9 @@
                                         Sambut Momen Gratis PPN, Purinusa Jayakusuma Rilis Hunian Baru di Jakbar</a></h3>
                                 </div>
                                 <div class="news-one__bottom">
-                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="news-one__more"> <i
+                                    <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?" class="news-one__more"> <i
                                             class="fa fa-arrow-right"></i> Read More</a>
-                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="news-one__comments"> <i
+                                    <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?" class="news-one__comments"> <i
                                             class="fas fa-comments"></i> 2 Comments</a>
                                 </div>
                             </div>
@@ -942,9 +942,9 @@
                                     </a></h3>
                                 </div>
                                 <div class="news-one__bottom">
-                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="news-one__more"> <i
+                                    <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?" class="news-one__more"> <i
                                             class="fa fa-arrow-right"></i> Read More</a>
-                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="news-one__comments"> <i
+                                    <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?" class="news-one__comments"> <i
                                             class="fas fa-comments"></i> 2 Comments</a>
                                 </div>
                             </div>
@@ -967,9 +967,9 @@
                                         Sambut Momen Gratis PPN, Purinusa Jayakusuma Rilis Hunian Baru di Jakbar</a></h3>
                                 </div>
                                 <div class="news-one__bottom">
-                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="news-one__more"> <i
+                                    <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?" class="news-one__more"> <i
                                             class="fa fa-arrow-right"></i> Read More</a>
-                                    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="news-one__comments"> <i
+                                    <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?" class="news-one__comments"> <i
                                             class="fas fa-comments"></i> 2 Comments</a>
                                 </div>
                             </div>
@@ -1109,11 +1109,11 @@
                                         <h3 class="footer-widget__title">Explore</h3>
                                     </div>
                                     <ul class="footer-widget__Explore-list list-unstyled">
-                                        <li><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">About</a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">About</a></li>
                                         <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Custom Widget</a></li>
-                                        <li><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Shortcodes</a></li>
-                                        <li><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">Blank page</a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">Custom Widget</a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">Shortcodes</a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">Blank page</a></li>
                                     </ul>
                                 </div>
                             </div> -->
@@ -1137,7 +1137,7 @@
                                                 <span class="fas fa-phone-alt"></span>
                                             </div>
                                             <div class="text">
-                                                <p><a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit.">{{$general['content']->contact_number}}</a></p>
+                                                <p><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">{{$general['content']->contact_number}}</a></p>
                                             </div>
                                         </li>
                                         <li>
@@ -1231,7 +1231,7 @@
     <!-- /.search-popup -->
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="icon-right-arrow"></i></a>
-    <a href="https://api.whatsapp.com/send?phone=6281317876888&text=Hi, Saya ingin menjadwalkan visit." class="floating" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?" class="floating" target="_blank">
         <i class="fab fa-whatsapp fab-icon"></i>
     </a>
 
