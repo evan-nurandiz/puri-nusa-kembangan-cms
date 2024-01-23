@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=1920">
 
-        <title>Aryana Admin</title>
+        <title>Purinusa Kembangan Admin</title>
         <link rel="icon" type="image/x-icon" href="{{url('/icon/main-icon.ico')}}">
 
         <!-- Fonts -->
