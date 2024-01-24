@@ -72,7 +72,7 @@
                         <div class="col-span-1">
                                 <x-text-input
                                 inputName="concept_description_1_count"
-                                labelName="description 1 count"
+                                labelName="Description 1 count"
                                 placeHolder="Enter Descritpion 1 Count"
                                 inputValue="{{$content['content']->concept_description_1_count}}"
                                 isImportant="true"
@@ -90,7 +90,7 @@
                         <div class="col-span-1 -mt-4">
                             <x-text-input
                                 inputName="concept_description_2_count"
-                                labelName="description 2 count"
+                                labelName="Description 2 count"
                                 placeHolder="Enter Descritpion 2 Count"
                                 inputValue="{{$content['content']->concept_description_2_count}}"
                                 isImportant="true"
@@ -108,7 +108,7 @@
                         <div class="col-span-1 -mt-4">
                             <x-text-input
                                 inputName="concept_description_3_count"
-                                labelName="description 3 count"
+                                labelName="Description 3 count"
                                 placeHolder="Enter Descritpion 3 Count"
                                 inputValue="{{$content['content']->concept_description_3_count}}"
                                 isImportant="true"
@@ -126,7 +126,7 @@
                         <div class="col-span-1">
                             <x-text-input
                                 inputName="concept_description_4_count"
-                                labelName="description 4 count"
+                                labelName="Description 4 count"
                                 placeHolder="Enter Descritpion 4 Count"
                                 inputValue="{{$content['content']->concept_description_4_count}}"
                                 isImportant="true"

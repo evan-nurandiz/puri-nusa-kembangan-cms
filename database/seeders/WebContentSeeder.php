@@ -44,8 +44,8 @@ class WebContentSeeder extends Seeder
             tile authentic, chillwave put a bird on it church-key 
             try-hard ramps heirloom.",
             "benefit_vidio_youtube_url" => "https://www.youtube.com/watch?v=Get7rqXYrbQ",
-            "benefit_total_unit" => "49+",
-            "benefit_total_area" => "6000+",
+            "benefit_total_unit" => "49",
+            "benefit_total_area" => "6000",
             "benefit_1_icon" => "benefit_1.svg",
             "benefit_1_title" => "Smart Living",
             "benefit_1_description" => "When nothing prevents our being able to we like best, every pleasure to be welcomed & every.",
@@ -68,13 +68,13 @@ class WebContentSeeder extends Seeder
                     'house_type' => "Tipe 2 Lantai",
                     'house_type_description' => "There are many type of variations pass not available",
                     'house_type_image' => 'house-display-1.png',
-                    'house_link' => "/house-1"
+                    'house_link' => "https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?"
                 ),
                 array(
                     'house_type' => "Tipe 3 Lantai",
                     'house_type_description' => "There are many type of variations pass not available",
                     'house_type_image' => 'house-display-1.png',
-                    'house_link' => "/house-2"
+                    'house_link' => "https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?"
                 )
             )
         ];
