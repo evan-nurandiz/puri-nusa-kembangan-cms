@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Purinusa Kembangan </title>
+    <title> Purinusa Kembangan | Your next level of Home </title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{asset('assets/images/main-icon.ico')}}" />
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets/images/main-icon.ico')}}" />
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/images/main-icon.ico')}}" />
     <link rel="manifest" href="{{asset('assets/images/main-icon.ico')}}" />
-    <meta name="description" content="Purinusa Kembangan" />
+    <meta name="description" content="Purinusa Kembangan | Your next level of Home" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
