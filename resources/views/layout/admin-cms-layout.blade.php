@@ -163,15 +163,22 @@
 												<span class="menu-item-text text-[#CEAE92] text-[14px] font-bold">PROFIL</span>
 											</div>
 											<ul style="display: block;">
-												<li data-menu-item="modern-project-dashboard" class="menu-item">
-													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-[#FFFFFF]">
-														<path d="M2.2337 13.5H6.06516C6.91122 13.5 7.68467 13.9815 8.06304 14.7438L8.31741 15.2562C8.69578 16.0185 9.46923 16.5 10.3153 16.5H13.5108C14.3569 16.5 15.1303 16.0185 15.5087 15.2562L15.7631 14.7438C16.1414 13.9815 16.9149 13.5 17.7609 13.5H21.5924M2.2337 13.8383V18C2.2337 19.2426 3.23376 20.25 4.4674 20.25H19.3587C20.5923 20.25 21.5924 19.2426 21.5924 18V13.8383C21.5924 13.614 21.5591 13.391 21.4936 13.1766L19.0993 5.33831C18.8109 4.39423 17.945 3.75 16.9644 3.75H6.86171C5.88111 3.75 5.01518 4.39423 4.7268 5.33831L2.33248 13.1766C2.267 13.391 2.2337 13.614 2.2337 13.8383Z" 
-														stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-													</svg>
-													<a class="h-full w-full flex items-center" href="{{route('admin-banner-cms')}}">
-														<span class="text-[#FFFFFF]">General</span>
-													</a>
-												</li>
+												<a class="menu-item-link {{ 
+													Route::is('admin-general-cms', 'admin-house-layout-cms-create', 'admin-house-layout-cms-edit') ? 'bg-white rounded-[6px]' : ''
+												}}" href="{{route('admin-general-cms')}}">
+													<li data-menu-item="modern-project-dashboard" class="menu-item">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="{{ 
+															Route::is('admin-general-cms', 'admin-house-layout-cms-create', 'admin-house-layout-cms-edit') ? 'text-[#344643]' : 'text-[#FFFFFF]'
+														}}">
+															<path d="M2.2337 13.5H6.06516C6.91122 13.5 7.68467 13.9815 8.06304 14.7438L8.31741 15.2562C8.69578 16.0185 9.46923 16.5 10.3153 16.5H13.5108C14.3569 16.5 15.1303 16.0185 15.5087 15.2562L15.7631 14.7438C16.1414 13.9815 16.9149 13.5 17.7609 13.5H21.5924M2.2337 13.8383V18C2.2337 19.2426 3.23376 20.25 4.4674 20.25H19.3587C20.5923 20.25 21.5924 19.2426 21.5924 18V13.8383C21.5924 13.614 21.5591 13.391 21.4936 13.1766L19.0993 5.33831C18.8109 4.39423 17.945 3.75 16.9644 3.75H6.86171C5.88111 3.75 5.01518 4.39423 4.7268 5.33831L2.33248 13.1766C2.267 13.391 2.2337 13.614 2.2337 13.8383Z" 
+															stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+														<span class="h-full w-full flex items-center {{ 
+															Route::is('admin-general-cms', 'admin-house-layout-cms-create', 'admin-house-layout-cms-edit') ? 'text-[#344643]' : 'text-[#FFFFFF]'
+														}}"> General
+														</span>
+													</li>
+												</a>
 												<li data-menu-item="modern-project-dashboard" class="menu-item">
 													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-[#FFFFFF]">
 														<path d="M16.3807 18.75H7.44592M16.3807 18.75C18.0255 18.75 19.359 20.0931 19.359 21.75H4.46765C4.46765 20.0931 5.80107 18.75 7.44592 18.75M16.3807 18.75V15.375C16.3807 14.7537 15.8807 14.25 15.2638 14.25H14.3985M7.44592 18.75V15.375C7.44592 14.7537 7.94594 14.25 8.56276 14.25H9.42808M14.3985 14.25H9.42808M14.3985 14.25C13.8552 13.3038 13.5111 12.227 13.4242 11.0777M9.42808 14.25C9.97145 13.3038 10.3155 12.227 10.4024 11.0777M5.21222 4.23636C4.23704 4.3792 3.27174 4.55275 2.31732 4.75601C2.76437 7.42349 4.959 9.49282 7.6739 9.72775M5.21222 4.23636V4.5C5.21222 6.60778 6.17132 8.48992 7.6739 9.72775M5.21222 4.23636V2.72089C7.40166 2.41051 9.63888 2.25 11.9133 2.25C14.1877 2.25 16.4249 2.41051 18.6144 2.72089V4.23636M7.6739 9.72775C8.45577 10.3719 9.38479 10.8415 10.4024 11.0777M18.6144 4.23636V4.5C18.6144 6.60778 17.6553 8.48992 16.1527 9.72775M18.6144 4.23636C19.5896 4.3792 20.5549 4.55275 21.5093 4.75601C21.0623 7.42349 18.8676 9.49282 16.1527 9.72775M16.1527 9.72775C15.3708 10.3719 14.4418 10.8415 13.4242 11.0777M13.4242 11.0777C12.9386 11.1904 12.4329 11.25 11.9133 11.25C11.3937 11.25 10.888 11.1904 10.4024 11.0777" 
@@ -209,16 +216,22 @@
 													</a>
 												</li>
 												<li data-menu-item="modern-project-dashboard" class="menu-item">
-													<a class="menu-item-link" href="{{route('admin-general-cms')}}">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-[#FFFFFF]">
+													<a class="menu-item-link {{ 
+														Route::is('admin-gallery-cms') ? 'bg-white rounded-[6px]' : ''
+													}}" href="{{route('admin-gallery-cms')}}">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="{{ 
+															Route::is('admin-gallery-cms') ? 'text-[#344643]' : 'text-[#FFFFFF]'
+														}}">
 															<path d="M6.77742 6.1749C6.41896 6.75354 5.81881 7.13398 5.14843 7.22994C4.77173 7.28386 4.39645 7.34223 4.02264 7.40497C2.97739 7.58042 2.2337 8.50663 2.2337 9.57402V18C2.2337 19.2426 3.23376 20.25 4.4674 20.25H19.3587C20.5923 20.25 21.5924 19.2426 21.5924 18V9.57403C21.5924 8.50664 20.8487 7.58043 19.8035 7.40498C19.4297 7.34223 19.0544 7.28387 18.6777 7.22995C18.0073 7.13398 17.4071 6.75354 17.0487 6.17491L16.2334 4.85889C15.8577 4.25237 15.2183 3.85838 14.5096 3.82005C13.6499 3.77355 12.7842 3.75 11.9131 3.75C11.0419 3.75 10.1762 3.77355 9.3165 3.82005C8.60778 3.85838 7.96842 4.25237 7.59268 4.85889L6.77742 6.1749Z" 
 															stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 															<path d="M16.3804 12.75C16.3804 15.2353 14.3803 17.25 11.9131 17.25C9.44578 17.25 7.44566 15.2353 7.44566 12.75C7.44566 10.2647 9.44578 8.25 11.9131 8.25C14.3803 8.25 16.3804 10.2647 16.3804 12.75Z" 
 															stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 															<path d="M18.6141 10.5H18.6216V10.5075H18.6141V10.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 														</svg>
-														<span class="h-full w-full flex items-center" href="{{route('admin-banner-cms')}}">
-															<span class="text-[#FFFFFF]">Foto</span>
+														<span class="h-full w-full flex items-center {{ 
+															Route::is('admin-gallery-cms') ? 'text-[#344643]' : 'text-[#FFFFFF]'
+														}}">
+															Foto
 														</span>
 													</a>
 												</li>

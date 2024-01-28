@@ -1,5 +1,9 @@
 @extends('layout.admin-cms-layout')
 
+@section('cms-title')
+    Edit Banner
+@endsection
+
 @section('content')
 <div>
     <form action="{{route('admin-banner-update-cms',[

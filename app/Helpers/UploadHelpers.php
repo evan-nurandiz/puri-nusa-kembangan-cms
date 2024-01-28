@@ -11,6 +11,7 @@ class UploadHelpers {
         // Get Filename
         $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
         // Get just Extension
+        $filename = str_replace(" ","_",$filename);
         $extension = $file->file($field)->getClientOriginalExtension();
         // Filename To store
         $fileNameToStore = $filename. '_'. time().'.'.$extension;

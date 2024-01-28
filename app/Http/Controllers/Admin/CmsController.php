@@ -389,6 +389,7 @@ class CmsController extends Controller
         }
     } 
 
+
     public function AdminGeneralView() {
         try {
             $content = $this->cmsHandlers->getContentBySection('general');
@@ -423,7 +424,10 @@ class CmsController extends Controller
             'instagram_link',
             'facebook_link',
             'twitter_link',
-            'tiktok_pixel_script'
+            'tiktok_pixel_script',
+            'meta_pixel_script',
+            'google_tag_script',
+            'custom_header_script'
         ]);
     
         try {
@@ -452,6 +456,32 @@ class CmsController extends Controller
 
             return view('admin.admin-house-layout-cms', [
                 'content' => $content
+            ]);
+        } catch (Exception $e) 
+        {
+            return redirect()->back()->with(
+                'status','fail',
+            )->with(
+                'message','fail load data cause'.$e->getMessage()
+            );
+        }
+    }
+
+    public function AdminHouseLayoutCreateView() {
+        return view('admin.admin-house-layout-edit', [
+            'content' => null
+        ]);
+    }
+
+    public function AdminHouseLayoutEditView($id) {
+        try {
+            $content = $this->cmsHandlers->getContentBySection('houseLayout');
+            $content['content'] = json_decode($content['content']);
+
+            $content['content']->house_layout_list[$id]->house_type_id = $id;
+
+            return view('admin.admin-house-layout-edit', [
+                'content' => $content['content']->house_layout_list[$id]
             ]);
         } catch (Exception $e) 
         {
@@ -529,35 +559,41 @@ class CmsController extends Controller
     
     public function AdminHouseLayoutStore(Request $request) {
         $request->validate([
-            'house_type' => 'required|max:50',
-            'house_type_description' => 'required|max:100',
-            'house_type_image_input' => 'required|file|mimes:jpeg,png,jpg|max:2048',
-            'house_link' => 'max:50'
+            'house_area_total' => 'required|max:50',
+            'house_floor' => 'required|max:100',
+            'house_status' => 'required|max:50',
+            'house_bedroom' => 'required|max:100',
+            'house_bathroom' => 'required|max:50',
+            'house_carport' => 'required|max:100',
+            'house_layout_image_input' => 'required|file|mimes:jpeg,png,jpg|max:2048',
+            'house_link_url' => 'max:50'
         ]);
 
         $payload = $request->only([
-            'house_type',
-            'house_type_description',
-            'house_link'
+            'house_area_total',
+            'house_floor',
+            'house_status',
+            'house_bedroom',
+            'house_bathroom',
+            'house_carport',
+            'house_link_url'
         ]);
-        
-        return $payload;
 
         $payload = $this->generalHelper->object_to_array($payload);
 
-        if ($request->hasFile('house_type_image_input')) {
-            $filename = $this->uploadHelpers->uploadSingleImage($request, 'house_type_image_input');
-            $payload['house_type_image'] = $filename;
+        if ($request->hasFile('house_layout_image_input')) {
+            $filename = $this->uploadHelpers->uploadSingleImage($request, 'house_layout_image_input');
+            $payload['house_layout_image'] = $filename;
         }
 
         try {
-            $content = $this->cmsHandlers->getContentBySection('houseType');
+            $content = $this->cmsHandlers->getContentBySection('houseLayout');
             $content['content'] = json_decode($content['content']);
     
             $data = $content['content'];
-            array_push($data->house_types_list, $payload);
+            array_push($data->house_layout_list, $payload);
 
-            $this->cmsHandlers->updateContentBySection($data, 'houseType');
+            $this->cmsHandlers->updateContentBySection($data, 'houseLayout');
 
             return redirect()->back()
             ->with(
@@ -571,6 +607,182 @@ class CmsController extends Controller
                 'status','fail',
             )->with(
                 'message','fail create house type' .$e->getMessage()
+            );
+        }
+    }
+
+    public function AdminHouseLayoutUpdateList(Request $request, $id) {
+        $request->validate([
+            'house_area_total' => 'required|max:50',
+            'house_floor' => 'required|max:100',
+            'house_status' => 'required|max:50',
+            'house_bedroom' => 'required|max:100',
+            'house_bathroom' => 'required|max:50',
+            'house_carport' => 'required|max:100',
+            'house_layout_image' => 'required',
+            'house_layout_image_input' => 'file|mimes:jpeg,png,jpg|max:2048',
+            'house_link_url' => 'max:50'
+        ]);
+
+        $payload = $request->only([
+            'house_area_total',
+            'house_floor',
+            'house_status',
+            'house_bedroom',
+            'house_bathroom',
+            'house_carport',
+            'house_link_url',
+            'house_layout_image'
+        ]);
+
+        if ($request->hasFile('house_layout_image_input')) {
+            $filename = $this->uploadHelpers->uploadSingleImage($request, 'house_layout_image_input');
+            $payload['house_layout_image'] = $filename;
+        }
+
+        try {
+            $content = $this->cmsHandlers->getContentBySection('houseLayout');
+            $content['content'] = json_decode($content['content']);
+    
+            $data = $content['content'];
+            $data->house_layout_list[$id] = $payload;
+
+            $this->cmsHandlers->updateContentBySection($data, 'houseLayout');
+
+            return redirect()->back()
+            ->with(
+                'status','success',
+            )->with(
+                'message','success create house type'
+            );
+        } catch (Exception $e) {
+            return redirect()->back()
+            ->with(
+                'status','fail',
+            )->with(
+                'message','fail create house type' .$e->getMessage()
+            );
+        }
+    } 
+
+    public function AdminGalleryView() {
+        try {
+            $content = $this->cmsHandlers->getContentBySection('gallery');
+            $content['content'] = json_decode($content['content']);
+
+            return view('admin.admin-gallery-cms', [
+                'content' => $content
+            ]);
+        } catch (Exception $e) 
+        {
+            return redirect()->back()->with(
+                'status','fail',
+            )->with(
+                'message','fail load data cause'.$e->getMessage()
+            );
+        }
+    }
+
+    public function AdminGalleryStore(Request $request) {
+        $request->validate([
+            'gallery_image_input' => 'required|file|mimes:jpeg,png,jpg|max:2048'
+        ]);
+
+        $image = null;
+        if ($request->hasFile('gallery_image_input')) {
+            $filename = $this->uploadHelpers->uploadSingleImage($request, 'gallery_image_input');
+            $image = $filename;
+        }
+
+        try {
+            $content = $this->cmsHandlers->getContentBySection('gallery');
+            $content['content'] = json_decode($content['content']);
+    
+            $data = $content['content'];
+            array_push($data->gallery_list, $image);
+
+            $this->cmsHandlers->updateContentBySection($data, 'gallery');
+
+            return redirect()->back()
+            ->with(
+                'status','success',
+            )->with(
+                'message','success Create gallery'
+            );
+        } catch (Exception $e) {
+            return redirect()->back()
+            ->with(
+                'status','fail',
+            )->with(
+                'message','fail Create gallery' .$e->getMessage()
+            );
+        }
+    }
+
+    public function AdminGalleryUpdate(Request $request) {
+        $request->validate([
+            'gallery_image_id' => 'required',
+            'gallery_image_input' => 'required|file|mimes:jpeg,png,jpg|max:2048'
+        ]);
+
+        $payload = $request->only([
+            'gallery_image_id'
+        ]);
+
+        if ($request->hasFile('gallery_image_input')) {
+            $filename = $this->uploadHelpers->uploadSingleImage($request, 'gallery_image_input');
+            $payload['image'] = $filename;
+        }
+
+        try {
+            $content = $this->cmsHandlers->getContentBySection('gallery');
+            $content['content'] = json_decode($content['content']);
+    
+            $data = $content['content'];
+            $data->gallery_list[$payload['gallery_image_id']] = $payload['image'];
+
+            $this->cmsHandlers->updateContentBySection($data, 'gallery');
+
+            return redirect()->back()
+            ->with(
+                'status','success',
+            )->with(
+                'message','success edit gallery'
+            );
+        } catch (Exception $e) {
+            return redirect()->back()
+            ->with(
+                'status','fail',
+            )->with(
+                'message','fail edit gallery' .$e->getMessage()
+            );
+        }
+    }
+
+    public function AdminGalleryDelete($id) {
+        try {
+            $content = $this->cmsHandlers->getContentBySection('gallery');
+            $content['content'] = json_decode($content['content']);
+    
+            $data = $content['content'];
+    
+            $this->uploadHelpers->deleteSingleImage($data->gallery_list[$id - 1]);
+            array_splice($data->gallery_list, ($id - 1), 1);
+
+            $this->cmsHandlers->updateContentBySection($data, 'gallery');
+
+            return redirect()->back()
+            ->with(
+                'status','success',
+            )->with(
+                'message','success delete house layout'
+            );
+        } catch (Exception $e) {
+            return redirect()->back()
+            ->with(
+                'status','fail',
+            )->with(
+                'message','fail delete house layout' .$e->getMessage()
             );
         }
     }

@@ -91,7 +91,8 @@ class WebContentSeeder extends Seeder
                     'house_bedroom' => '3',
                     'house_bathroom' => '3',
                     'house_carport' => '1',
-                    'house_layout_image' => 'home-layout.png'
+                    'house_layout_image' => 'home-layout.png',
+                    'house_link_url' => '/'
                 ),
                 array(
                     'house_area_total' => '60/140 m2',
@@ -100,7 +101,8 @@ class WebContentSeeder extends Seeder
                     'house_bedroom' => '4',
                     'house_bathroom' => '4',
                     'house_carport' => '1',
-                    'house_layout_image' => 'home-layout-2.png'
+                    'house_layout_image' => 'home-layout-2.png',
+                    'house_link_url' => '/'
                 )
             )
         ];
@@ -111,7 +113,14 @@ class WebContentSeeder extends Seeder
             'instagram_link' => 'https://www.instagram.com/purinusakembangan/',
             'facebook_link' => null,
             'twitter_link' => null,
-            'tiktok_pixel_script' => "<script>\r\n!function (w, d, t) {\r\n  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=[\"page\",\"track\",\"identify\",\"instances\",\"debug\",\"on\",\"off\",\"once\",\"ready\",\"alias\",\"group\",\"enableCookie\",\"disableCookie\"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i=\"https://analytics.tiktok.com/i18n/pixel/events.js\";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement(\"script\");o.type=\"text/javascript\",o.async=!0,o.src=i+\"?sdkid=\"+e+\"&lib=\"+t;var a=document.getElementsByTagName(\"script\")[0];a.parentNode.insertBefore(o,a)};\r\n\r\n  ttq.load('CMIDVG3C77UFIL1RAC1G');\r\n  ttq.page();\r\n}(window, document, 'ttq');\r\n</script>"
+            'tiktok_pixel_script' => "<script>\r\n!function (w, d, t) {\r\n  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=[\"page\",\"track\",\"identify\",\"instances\",\"debug\",\"on\",\"off\",\"once\",\"ready\",\"alias\",\"group\",\"enableCookie\",\"disableCookie\"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i=\"https://analytics.tiktok.com/i18n/pixel/events.js\";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement(\"script\");o.type=\"text/javascript\",o.async=!0,o.src=i+\"?sdkid=\"+e+\"&lib=\"+t;var a=document.getElementsByTagName(\"script\")[0];a.parentNode.insertBefore(o,a)};\r\n\r\n  ttq.load('CMIDVG3C77UFIL1RAC1G');\r\n  ttq.page();\r\n}(window, document, 'ttq');\r\n</script>",
+            "meta_pixel_script" => null,
+            "google_tag_script" => null,
+            "custom_header_script" => null
+        ];
+
+        $gallery = [
+            'gallery_list' => array('highlight-1.png', 'highlight-2.png')
         ];
 
         $data = [
@@ -134,6 +143,10 @@ class WebContentSeeder extends Seeder
             [
                 'section' => 'houseLayout',
                 'content' => json_encode($houseLayout)
+            ],
+            [
+                'section' => 'gallery',
+                'content' => json_encode($gallery)
             ]
         ];
 

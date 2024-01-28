@@ -6,7 +6,9 @@ return [
         'house-concept-2.png',
         'house-concept-1.png',
         'house-display-1.png',
-        'house-display-2.png'
+        'house-display-2.png',
+        'highlight-1.png',
+        'highlight-2.png'
     ]
 ];
 

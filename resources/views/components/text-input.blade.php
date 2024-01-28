@@ -1,5 +1,5 @@
 <div class="form-item vertical">
-    <label class="form-label mb-2 text-[14px] text-[#8A898E]">{{$labelName}} 
+    <label class="mb-2 text-[14px] text-[#8A898E] font-medium">{{$labelName}} 
         @if($isImportant === 'true')
         <span class="text-red-500"> *</span>
         @endif

@@ -67,6 +67,18 @@
     <link rel="stylesheet" href="{{url('/assets/css/aports.css')}}" />
     <link rel="stylesheet" href="{{url('/assets/css/aports-responsive.css')}}" />
     {!!$general['content']->tiktok_pixel_script!!}
+
+    @if(isset($general->meta_pixel_script))
+        {!!$general->meta_pixel_script!!}
+    @endif
+
+    @if(isset($general->google_tag_script))
+        {!!$general->google_tag_script!!}
+    @endif
+
+    @if(isset($general->custom_heder_script))
+        {!!$general->custom_heder_script!!}
+    @endif
 </head>
 
 <body class="custom-cursor">

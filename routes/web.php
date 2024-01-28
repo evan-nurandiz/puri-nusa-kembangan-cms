@@ -43,11 +43,21 @@ Route::middleware(['verifiedAdmin'])->group(function(){
     Route::patch('/admin/cms-house-type/list/{id}/update', [CmsController::class, 'AdminHouseTypeUpdateList'])->name('admin-house-type-cms-list-update');
     Route::delete('/admin/cms-house-type/list/{id}', [CmsController::class, 'AdminHouseTypeDelete'])->name('admin-house-type-cms-list-delete');
     Route::get('/admin/cms-house-layout', [CmsController::class, 'AdminHouseLayoutView'])->name('admin-house-layout-cms');
+    Route::get('/admin/cms-house-layout/create', [CmsController::class, 'AdminHouseLayoutCreateView'])->name('admin-house-layout-cms-create');
+    Route::get('/admin/cms-house-layout/{id}/edit', [CmsController::class, 'AdminHouseLayoutEditView'])->name('admin-house-layout-cms-edit');
     Route::patch('/admin/cms-house-layout', [CmsController::class, 'AdminHouseLayoutUpdate'])->name('admin-house-layout-cms-update');
     Route::post('/admin/cms-house-layout/list', [CmsController::class, 'AdminHouseLayoutStore'])->name('admin-house-layout-cms-store');
     Route::patch('/admin/cms-house-layout/list/{id}', [CmsController::class, 'AdminHouseLayoutUpdateList'])->name('admin-house-layout-cms-list-update');
     Route::delete('/admin/cms-house-layout/list/{id}', [CmsController::class, 'AdminHouseLayoutDelete'])->name('admin-house-layout-cms-list-delete');
     Route::get('/admin/general-cms', [CmsController::class, 'AdminGeneralView'])->name('admin-general-cms');
     Route::patch('/admin/general-cms', [CmsController::class, 'AdminGeneralUpdate'])->name('admin-general-cms-update');
+    Route::get('/admin/gallery-cms', [CmsController::class, 'AdminGalleryView'])->name('admin-gallery-cms');
+    Route::post('/admin/gallery-cms', [CmsController::class, 'AdminGalleryStore'])->name('admin-gallery-cms-store');
+    Route::post('/admin/gallery-cms/edit', [CmsController::class, 'AdminGalleryUpdate'])->name('admin-gallery-cms-update');
+    Route::delete('/admin/gallery-cms/{id}/delete', [CmsController::class, 'AdminGalleryDelete'])->name('admin-gallery-cms-delete');
+    Route::get('/admin/award-cms', [CmsController::class, 'AdminGalleryView'])->name('admin-gallery-cms');
+    Route::post('/admin/award-cms', [CmsController::class, 'AdminGalleryStore'])->name('admin-gallery-cms-store');
+    Route::post('/admin/award-cms/edit', [CmsController::class, 'AdminGalleryUpdate'])->name('admin-gallery-cms-update');
+    Route::delete('/admin/award-cms/{id}/delete', [CmsController::class, 'AdminGalleryDelete'])->name('admin-gallery-cms-delete');
 });
 

@@ -31,8 +31,8 @@
                     <div class="page-container relative h-full flex flex-auto flex-col">
                         <div class="h-full">
                             <div class="container mx-auto flex flex-col flex-auto items-center justify-center min-w-0 h-full">
-                                <div class="card min-w-[320px] md:min-w-[450px] card-shadow" role="presentation">
-                                    <div class="card-body md:p-10">
+                                <div class="card min-w-[320px] md:min-w-[500px] card-shadow" role="presentation">
+                                    <div class="card-body md:px-[86px] md:py-[42.5px]">
                                         <div class="text-center">
                                             <div class="logo">
                                                 <!-- <img class="mx-auto" src="img/logo/logo-light-streamline.png" alt="Elstar logo"> -->
@@ -80,7 +80,7 @@
                                                             <label class="form-label mb-2">Password</label>
                                                             <div class="relativ">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none" class="absolute z-10 bottom-[16px] left-[16px]">
-                                                                    <path d="M14.5 5V12C14.5 12.8284 13.8284 13.5 13 13.5H3C2.17157 13.5 1.5 12.8284 1.5 12V5M14.5 5C14.5 4.17157 13.8284 3.5 13 3.5H3C2.17157 3.5 1.5 4.17157 1.5 5M14.5 5V5.16181C14.5 5.6827 14.2298 6.1663 13.7861 6.43929L8.78615 9.51622C8.30404 9.8129 7.69596 9.8129 7.21385 9.51622L2.21385 6.43929C1.77023 6.1663 1.5 5.6827 1.5 5.16181V5" stroke="#8A898E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <path d="M11 7.5V5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5V7.5M4.5 15H11.5C12.3284 15 13 14.3284 13 13.5V9C13 8.17157 12.3284 7.5 11.5 7.5H4.5C3.67157 7.5 3 8.17157 3 9V13.5C3 14.3284 3.67157 15 4.5 15Z" stroke="#8A898E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                                                 </svg>
                                                                 <input
                                                                     id="password"
