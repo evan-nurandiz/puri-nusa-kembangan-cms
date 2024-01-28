@@ -41,6 +41,7 @@
                         filenameLabel="banner_file_name"
                         fileImagePreview="{{$banner->thumbnail}}"
                         fileDefaultValue="thumbnail"
+                        formatInfo="PNG. JPG (Recomended. 1920X720). max: 2MB."
                     />
                 </div>
             </div>

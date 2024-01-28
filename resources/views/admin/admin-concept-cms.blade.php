@@ -145,7 +145,7 @@
                 </div>
                 <div class="col-span-1">
                     <div>
-                        <p class="text-[20px] text-[#8A898E] font-bold leading-[28px] mb-[32px]">Concept Small Image (276 × 348 px)</p>
+                        <p class="text-[20px] text-[#8A898E] font-bold leading-[28px] mb-[32px]">Concept Small Image</p>
                         <x-image-input-single 
                             inputName="concept_small_image_input" 
                             labelName=""
@@ -154,10 +154,11 @@
                             filenameLabel="concept_small_image_file_name"
                             fileImagePreview="{{$content['content']->concept_small_image}}"
                             fileDefaultValue="concept_small_image"
+                            formatInfo="PNG. JPG (Recomended. 353X419). max: 2MB."
                         />
                     </div>
                     <div class="mt-[32px]">
-                        <p class="text-[20px] text-[#8A898E] font-bold leading-[28px] mb-[32px]">Concept Big Image (470 × 689 px)</p>
+                        <p class="text-[20px] text-[#8A898E] font-bold leading-[28px] mb-[32px]">Concept Big Image</p>
                         <x-image-input-single 
                             inputName="concept_big_image_input" 
                             labelName=""
@@ -166,6 +167,7 @@
                             filenameLabel="concept_big_image_file_name"
                             fileImagePreview="{{$content['content']->concept_big_image}}"
                             fileDefaultValue="concept_big_image"
+                            formatInfo="PNG. JPG (Recomended. 470X771). max: 2MB."
                         />
                     </div>
                 </div>

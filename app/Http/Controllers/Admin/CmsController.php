@@ -707,14 +707,14 @@ class CmsController extends Controller
             ->with(
                 'status','success',
             )->with(
-                'message','success Create gallery'
+                'message','Success Create Gallery'
             );
         } catch (Exception $e) {
             return redirect()->back()
             ->with(
                 'status','fail',
             )->with(
-                'message','fail Create gallery' .$e->getMessage()
+                'message','Fail Create Gallery' .$e->getMessage()
             );
         }
     }
@@ -775,15 +775,252 @@ class CmsController extends Controller
             ->with(
                 'status','success',
             )->with(
-                'message','success delete house layout'
+                'message','Success Gallery Layout'
             );
         } catch (Exception $e) {
             return redirect()->back()
             ->with(
                 'status','fail',
             )->with(
-                'message','fail delete house layout' .$e->getMessage()
+                'message','Fail Delete Gallery Layout' .$e->getMessage()
             );
         }
     }
-}
+
+    public function AdminAwardView() {
+        try {
+            $content = $this->cmsHandlers->getContentBySection('award');
+            $content['content'] = json_decode($content['content']);
+
+            return view('admin.admin-award-cms', [
+                'content' => $content
+            ]);
+        } catch (Exception $e) 
+        {
+            return redirect()->back()->with(
+                'status','fail',
+            )->with(
+                'message','fail load data cause'.$e->getMessage()
+            );
+        }
+    }
+
+    public function AdminAwardCreateView() {
+        try {
+            return view('admin.admin-award-edit');
+        } catch (Exception $e) 
+        {
+            return redirect()->back()->with(
+                'status','fail',
+            )->with(
+                'message','fail load data cause'.$e->getMessage()
+            );
+        }
+    }
+
+    public function AdminAwardStore(Request $request) {
+        $request->validate([
+            'award_description' => 'required',
+            'award_image_input' => 'required|file|mimes:jpeg,png,jpg|max:2048'
+        ]);
+
+        $payload = $request->only([
+            'award_description'
+        ]);
+
+        if ($request->hasFile('award_image_input')) {
+            $filename = $this->uploadHelpers->uploadSingleImage($request, 'award_image_input');
+            $payload['award_image'] = $filename;
+        }
+
+        try {
+            $content = $this->cmsHandlers->getContentBySection('award');
+            $content['content'] = json_decode($content['content']);
+    
+            $data = $content['content'];
+            array_push($data->award_list, $payload);
+
+            $this->cmsHandlers->updateContentBySection($data, 'award');
+
+            return redirect()->back()
+            ->with(
+                'status','success',
+            )->with(
+                'message','Success Create Award'
+            );
+        } catch (Exception $e) {
+            return redirect()->back()
+            ->with(
+                'status','fail',
+            )->with(
+                'message','Fail Create Award' .$e->getMessage()
+            );
+        }
+    }
+
+    public function AdminAwardEditView($id) {
+        try {
+            $content = $this->cmsHandlers->getContentBySection('award');
+            $content['content'] = json_decode($content['content']);
+
+            $content['content']->award_list[$id]->house_award_id = $id;
+
+            return view('admin.admin-award-edit', [
+                'content' => $content['content']->award_list[$id]
+            ]);
+        } catch (Exception $e) 
+        {
+            return redirect()->back()->with(
+                'status','fail',
+            )->with(
+                'message','fail load data cause'.$e->getMessage()
+            );
+        }
+    }
+
+    public function AdminAwardUpdate(Request $request, $id) {
+        $request->validate([
+            'award_description' => 'required',
+            'award_image' => 'required',
+            'award_image_input' => 'file|mimes:jpeg,png,jpg|max:2048'
+        ]);
+
+        $payload = $request->only([
+            'award_description',
+            'award_image'
+        ]);
+
+        if ($request->hasFile('award_image_input')) {
+            $filename = $this->uploadHelpers->uploadSingleImage($request, 'award_image_input');
+            $payload['award_image'] = $filename;
+        }
+
+        try {
+            $content = $this->cmsHandlers->getContentBySection('award');
+            $content['content'] = json_decode($content['content']);
+    
+            $data = $content['content'];
+            $data->award_list[$id] = $payload;
+
+            $this->cmsHandlers->updateContentBySection($data, 'award');
+
+            return redirect()->back()
+            ->with(
+                'status','success',
+            )->with(
+                'message','Success Edit Award'
+            );
+        } catch (Exception $e) {
+            return redirect()->back()
+            ->with(
+                'status','fail',
+            )->with(
+                'message','Fail Edit Award' .$e->getMessage()
+            );
+        }
+    }
+
+    public function AdminAwardDelete($id) {
+        try {
+            $content = $this->cmsHandlers->getContentBySection('award');
+            $content['content'] = json_decode($content['content']);
+    
+            $data = $content['content'];
+    
+            $this->uploadHelpers->deleteSingleImage($data->award_list[$id - 1]->award_image);
+            array_splice($data->award_list, ($id - 1), 1);
+
+            $this->cmsHandlers->updateContentBySection($data, 'award');
+
+            return redirect()->back()
+            ->with(
+                'status','success',
+            )->with(
+                'message','Success Delete Award Layout'
+            );
+        } catch (Exception $e) {
+            return redirect()->back()
+            ->with(
+                'status','fail',
+            )->with(
+                'message','Fail Delete Award Layout' .$e->getMessage()
+            );
+        }
+    }
+
+    public function AdminAroundHouseView() {
+        try {
+            $content = $this->cmsHandlers->getContentBySection('aroundHouse');
+            $content['content'] = json_decode($content['content']);
+
+            $content['content']->shopping_list = implode(',', $content['content']->shopping_list);
+            $content['content']->school_list = implode(',', $content['content']->school_list);
+            $content['content']->hospital_list = implode(',', $content['content']->hospital_list);
+            $content['content']->express_way_list = implode(',', $content['content']->express_way_list);
+
+            return view('admin.admin-house-around-cms', [
+                'content' => $content
+            ]);
+        } catch (Exception $e) 
+        {
+            return redirect()->back()->with(
+                'status','fail',
+            )->with(
+                'message','fail load data cause'.$e->getMessage()
+            );
+        }
+    }
+
+    public function AdminAroundHouseUpdate(Request $request) {
+        $request->validate([
+            'shopping_list' => 'required',
+            'school_list' => 'required',
+            'hospital_list' => 'required',
+            'express_way_list' => 'required',
+            'around_house_image' => 'required',
+            'around_house_image_input' => 'file|mimes:jpeg,png,jpg|max:2048'
+        ]);
+
+        $payload = $request->only([
+            'shopping_list',
+            'school_list',
+            'hospital_list',
+            'express_way_list',
+            'around_house_image'
+        ]);
+
+        if ($request->hasFile('around_house_image_input')) {
+            $filename = $this->uploadHelpers->uploadSingleImage($request, 'around_house_image_input');
+            $payload['around_house_image'] = $filename;
+        }
+
+        $listTagFields = array('shopping_list', 'school_list', 'hospital_list', 'express_way_list');
+        foreach($listTagFields as $listTagField) {
+            $listField = [];
+            foreach(json_decode($payload[$listTagField]) as $tag) {
+                array_push($listField, $tag->value);
+            }
+            $payload[$listTagField] = $listField;
+        }
+
+        try {
+            $this->cmsHandlers->updateContentBySection($payload, 'aroundHouse');
+
+            return redirect()->back()
+            ->with(
+                'status','success',
+            )->with(
+                'message','Success Update Around House'
+            );
+        } catch (Exception $e) {
+            return redirect()->back()
+            ->with(
+                'status','fail',
+            )->with(
+                'message','Fail Update Around House' .$e
+            );
+        }
+
+        return $payload;
+    }
+ }

@@ -38,7 +38,7 @@
         </thead>
         <tbody>
             @foreach($content['content']->house_layout_list as $house_layout)
-            <tr>
+            <tr class="bg-[#FFF]">
                 <td class="px-[1rem] py-[1.5rem] w-[10%]">{{$loop->iteration}}</td>
                 <td class="px-[1rem] py-[1.5rem] w-[40%]">
                     <img src="{{asset('storage/images/'.$house_layout->house_layout_image)}}" alt="">

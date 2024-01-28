@@ -147,15 +147,23 @@
 														</span>
 													</li>
 												</a>
-												<li data-menu-item="modern-project-dashboard" class="menu-item">
-													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-[#FFFFFF]">
-														<path d="M3.72284 3.75V8.25M3.72284 3.75H8.19023M3.72284 3.75L8.9348 9M3.72284 20.25V15.75M3.72284 20.25H8.19023M3.72284 20.25L8.9348 15M20.1033 3.75L15.6359 3.75M20.1033 3.75V8.25M20.1033 3.75L14.8913 9M20.1033 20.25H15.6359M20.1033 20.25V15.75M20.1033 20.25L14.8913 15" 
-														stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-													</svg>
-													<a class="h-full w-full flex items-center" href="{{route('admin-banner-cms')}}">
-														<span class="text-[#FFFFFF]">Sekeliling</span>
-													</a>
-												</li>
+												<a class="menu-item-link {{ 
+													Route::is('admin-around-house-cms') ? 'bg-white rounded-[6px]' : ''
+												}}" href="{{route('admin-around-house-cms')}}">
+													<li data-menu-item="modern-project-dashboard" class="menu-item">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="{{ 
+															Route::is('admin-around-house-cms') ? 'text-[#344643]' : 'text-[#FFFFFF]'
+														}}">
+															<path d="M3.72284 3.75V8.25M3.72284 3.75H8.19023M3.72284 3.75L8.9348 9M3.72284 20.25V15.75M3.72284 20.25H8.19023M3.72284 20.25L8.9348 15M20.1033 3.75L15.6359 3.75M20.1033 3.75V8.25M20.1033 3.75L14.8913 9M20.1033 20.25H15.6359M20.1033 20.25V15.75M20.1033 20.25L14.8913 15" 
+															stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+														<span class="h-full w-full flex items-center {{ 
+															Route::is('admin-around-house-cms') ? 'text-[#344643]' : 'text-[#FFFFFF]'
+														}}">
+															Sekeliling
+														</span>
+													</li>
+												</a>
 											</ul>
 										</li>
 										<li class="mt-[12px]">
@@ -179,24 +187,21 @@
 														</span>
 													</li>
 												</a>
-												<li data-menu-item="modern-project-dashboard" class="menu-item">
-													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-[#FFFFFF]">
-														<path d="M16.3807 18.75H7.44592M16.3807 18.75C18.0255 18.75 19.359 20.0931 19.359 21.75H4.46765C4.46765 20.0931 5.80107 18.75 7.44592 18.75M16.3807 18.75V15.375C16.3807 14.7537 15.8807 14.25 15.2638 14.25H14.3985M7.44592 18.75V15.375C7.44592 14.7537 7.94594 14.25 8.56276 14.25H9.42808M14.3985 14.25H9.42808M14.3985 14.25C13.8552 13.3038 13.5111 12.227 13.4242 11.0777M9.42808 14.25C9.97145 13.3038 10.3155 12.227 10.4024 11.0777M5.21222 4.23636C4.23704 4.3792 3.27174 4.55275 2.31732 4.75601C2.76437 7.42349 4.959 9.49282 7.6739 9.72775M5.21222 4.23636V4.5C5.21222 6.60778 6.17132 8.48992 7.6739 9.72775M5.21222 4.23636V2.72089C7.40166 2.41051 9.63888 2.25 11.9133 2.25C14.1877 2.25 16.4249 2.41051 18.6144 2.72089V4.23636M7.6739 9.72775C8.45577 10.3719 9.38479 10.8415 10.4024 11.0777M18.6144 4.23636V4.5C18.6144 6.60778 17.6553 8.48992 16.1527 9.72775M18.6144 4.23636C19.5896 4.3792 20.5549 4.55275 21.5093 4.75601C21.0623 7.42349 18.8676 9.49282 16.1527 9.72775M16.1527 9.72775C15.3708 10.3719 14.4418 10.8415 13.4242 11.0777M13.4242 11.0777C12.9386 11.1904 12.4329 11.25 11.9133 11.25C11.3937 11.25 10.888 11.1904 10.4024 11.0777" 
-														stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-													</svg>
-													<span class="h-full w-full flex items-center text-[#FFFFFF]">Penghargaan</span>
-												</li>
-												<li data-menu-item="modern-project-dashboard" class="menu-item">
-													<a class="menu-item-link" href="{{route('admin-general-cms')}}">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-[#FFFFFF]">
-															<path d="M13.0947 8.68842C13.5404 8.90291 13.9582 9.19611 14.3274 9.56802C16.072 11.3254 16.072 14.1746 14.3274 15.932L9.86002 20.432C8.11539 22.1893 5.2868 22.1893 3.54217 20.432C1.79755 18.6746 1.79755 15.8254 3.54217 14.068L5.28641 12.311M18.5397 11.689L20.2839 9.93198C22.0286 8.17462 22.0286 5.32538 20.2839 3.56802C18.5393 1.81066 15.7107 1.81066 13.9661 3.56802L9.49869 8.06802C7.75407 9.82538 7.75407 12.6746 9.49869 14.432C9.8679 14.8039 10.2857 15.0971 10.7314 15.3116" 
+												<a href="{{route('admin-award-cms')}}" class="menu-item-link {{ 
+													Route::is('admin-award-cms', 'admin-award-cms-create', 'admin-award-cms-edit') ? 'bg-white rounded-[6px]' : ''
+												}}">
+													<li data-menu-item="modern-project-dashboard" class="menu-item">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="{{ 
+															Route::is('admin-award-cms', 'admin-award-cms-create', 'admin-award-cms-edit') ? 'text-[#344643]' : 'text-[#FFFFFF]'
+														}}">
+															<path d="M16.3807 18.75H7.44592M16.3807 18.75C18.0255 18.75 19.359 20.0931 19.359 21.75H4.46765C4.46765 20.0931 5.80107 18.75 7.44592 18.75M16.3807 18.75V15.375C16.3807 14.7537 15.8807 14.25 15.2638 14.25H14.3985M7.44592 18.75V15.375C7.44592 14.7537 7.94594 14.25 8.56276 14.25H9.42808M14.3985 14.25H9.42808M14.3985 14.25C13.8552 13.3038 13.5111 12.227 13.4242 11.0777M9.42808 14.25C9.97145 13.3038 10.3155 12.227 10.4024 11.0777M5.21222 4.23636C4.23704 4.3792 3.27174 4.55275 2.31732 4.75601C2.76437 7.42349 4.959 9.49282 7.6739 9.72775M5.21222 4.23636V4.5C5.21222 6.60778 6.17132 8.48992 7.6739 9.72775M5.21222 4.23636V2.72089C7.40166 2.41051 9.63888 2.25 11.9133 2.25C14.1877 2.25 16.4249 2.41051 18.6144 2.72089V4.23636M7.6739 9.72775C8.45577 10.3719 9.38479 10.8415 10.4024 11.0777M18.6144 4.23636V4.5C18.6144 6.60778 17.6553 8.48992 16.1527 9.72775M18.6144 4.23636C19.5896 4.3792 20.5549 4.55275 21.5093 4.75601C21.0623 7.42349 18.8676 9.49282 16.1527 9.72775M16.1527 9.72775C15.3708 10.3719 14.4418 10.8415 13.4242 11.0777M13.4242 11.0777C12.9386 11.1904 12.4329 11.25 11.9133 11.25C11.3937 11.25 10.888 11.1904 10.4024 11.0777" 
 															stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 														</svg>
-														<span class="h-full w-full flex items-center" href="{{route('admin-banner-cms')}}">
-															<span class="text-[#FFFFFF]">Kontak</span>
-														</span>
-													</a>
-												</li>
+														<span class="h-full w-full flex items-center {{ 
+															Route::is('admin-award-cms', 'admin-award-cms-create', 'admin-award-cms-edit') ? 'text-[#344643]' : 'text-[#FFFFFF]'
+														}}">Penghargaan</span>
+													</li>
+												</a>
 											</ul>
 										</li>
 										<li class="mt-[12px]">
@@ -204,21 +209,27 @@
 												<span class="menu-item-text text-[#CEAE92] text-[14px] font-bold">GALERI</span>
 											</div>
 											<ul style="display: block;">
-												<li data-menu-item="modern-project-dashboard" class="menu-item">
-													<a class="menu-item-link" href="{{route('admin-general-cms')}}">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-[#FFFFFF]">
+												<a class="menu-item-link {{ 
+													Route::is('admin-article-cms', 'admin-article-create-cms', 'admin-article-edit-cms') ? 'bg-white rounded-[6px]' : ''
+												}}" href="{{route('admin-article-cms')}}">
+													<li data-menu-item="modern-project-dashboard" class="menu-item">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="{{ 
+															Route::is('admin-article-cms', 'admin-article-create-cms', 'admin-article-edit-cms') ? 'text-[#344643]' : 'text-[#FFFFFF]'
+														}}">
 															<path d="M11.9131 7.5H13.4022M11.9131 10.5H13.4022M5.95653 13.5H13.4022M5.95653 16.5H13.4022M16.3804 7.5H19.731C20.3478 7.5 20.8478 8.00368 20.8478 8.625V18C20.8478 19.2426 19.8478 20.25 18.6141 20.25M16.3804 7.5V18C16.3804 19.2426 17.3805 20.25 18.6141 20.25M16.3804 7.5V4.875C16.3804 4.25368 15.8804 3.75 15.2636 3.75H4.09512C3.4783 3.75 2.97827 4.25368 2.97827 4.875V18C2.97827 19.2426 3.97833 20.25 5.21197 20.25H18.6141M5.95653 7.5H8.93479V10.5H5.95653V7.5Z" 
 															stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 														</svg>
-														<span class="h-full w-full flex items-center" href="{{route('admin-banner-cms')}}">
-															<span class="text-[#FFFFFF]">Artikel</span>
+														<span class="h-full w-full flex items-center {{ 
+															Route::is('admin-article-cms', 'admin-article-create-cms', 'admin-article-edit-cms') ? 'text-[#344643]' : 'text-[#FFFFFF]'
+														}}">
+															Artikel
 														</span>
-													</a>
-												</li>
-												<li data-menu-item="modern-project-dashboard" class="menu-item">
-													<a class="menu-item-link {{ 
-														Route::is('admin-gallery-cms') ? 'bg-white rounded-[6px]' : ''
-													}}" href="{{route('admin-gallery-cms')}}">
+													</li>
+												</a>
+												<a class="menu-item-link {{ 
+													Route::is('admin-gallery-cms') ? 'bg-white rounded-[6px]' : ''
+												}}" href="{{route('admin-gallery-cms')}}">
+													<li data-menu-item="modern-project-dashboard" class="menu-item">
 														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="{{ 
 															Route::is('admin-gallery-cms') ? 'text-[#344643]' : 'text-[#FFFFFF]'
 														}}">
@@ -233,8 +244,8 @@
 														}}">
 															Foto
 														</span>
-													</a>
-												</li>
+													</li>
+												</a>
 											</ul>
 										</li>
 									</ul>

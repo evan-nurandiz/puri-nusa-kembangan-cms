@@ -16,11 +16,12 @@ class ImageInputSingle extends Component
     public $filenameLabel;
     public $fileImagePreview;
     public $fileDefaultValue;
+    public $formatInfo;
 
     /**
      * Create a new component instance.
      */
-    public function __construct($inputName, $labelName, $previewId, $inputId, $filenameLabel, $fileImagePreview, $fileDefaultValue)
+    public function __construct($inputName, $labelName, $previewId, $inputId, $filenameLabel, $fileImagePreview, $fileDefaultValue, $formatInfo)
     {
         $this->inputName = $inputName;
         $this->labelName = $labelName;
@@ -29,6 +30,7 @@ class ImageInputSingle extends Component
         $this->filenameLabel = $filenameLabel;
         $this->fileImagePreview = $fileImagePreview;
         $this->fileDefaultValue = $fileDefaultValue;
+        $this->formatInfo = $formatInfo;
     }
 
     /**

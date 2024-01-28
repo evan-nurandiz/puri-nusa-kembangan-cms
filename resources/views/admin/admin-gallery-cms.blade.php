@@ -29,7 +29,7 @@
         </thead>
         <tbody>
             @foreach($content['content']->gallery_list as $image)
-                <tr>
+                <tr class="bg-[#FFF]">
                     <td class="px-[1rem] py-[1.5rem] w-[10%]">{{$loop->iteration}}</td>
                     <td class="px-[1rem] py-[1.5rem] w-[40%]">
                         <img src="{{asset('storage/images/'.$image)}}" alt="">
@@ -103,6 +103,7 @@
                     filenameLabel="gallery_image_file_name"
                     fileImagePreview=""
                     fileDefaultValue=""
+                    formatInfo="PNG. JPG (Recomended. 384X384). max: 2MB."
                 />
             `
         } else if (modalType === 'edit') {
@@ -121,6 +122,7 @@
                     filenameLabel="gallery_image_file_name"
                     fileImagePreview="${image}"
                     fileDefaultValue="gallery_image"
+                    formatInfo="PNG. JPG (Recomended. 384X384). max: 2MB."
                 />
             `
         }

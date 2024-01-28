@@ -123,6 +123,27 @@ class WebContentSeeder extends Seeder
             'gallery_list' => array('highlight-1.png', 'highlight-2.png')
         ];
 
+        $award = [
+            'award_list' => array(
+                array(
+                    'award_description' => 'Indonesian Property Award 2023 Best Affordable Housing Development',
+                    'award_image' => 'thropy-list-1.svg'
+                ),
+                array(
+                    'award_description' => '16th Annual Indonesia Property & Bank Award',
+                    'award_image' => 'thropy-list-2.svg'
+                )
+            )
+        ];
+
+        $aroundHouse = [
+            'shopping_list' => array('Mal Puri Indah', 'Lippo Mall Puri', 'Plaza Senayan', 'Pondok Indah Mall', 'Ikea Alam Sutera', 'Swalayan Superindo', 'Lotte Grosir', 'Ranch Market'),
+            'school_list' => array('Universitas Binus', 'Universitas Multimedia Nusantara', 'Universitas Mercu Buana', 'Universitas Esa Unggul', 'Sekolah International IPEKA', 'SMP Notre Dame', 'SD Penabur', 'TK Stela Maris'),
+            'hospital_list' => array('Rumah Sakit Siloam', 'Rumah Sakit Mandaya', 'Rumah Sakit Pondok Indah Puri'),
+            'express_way_list' => array('Pintu Tol Meruya', 'Pintu Tol Joglo'),
+            'around_house_image' => 'map-1.png'
+        ];
+
         $data = [
             [
                 'section' => 'concept',
@@ -147,6 +168,14 @@ class WebContentSeeder extends Seeder
             [
                 'section' => 'gallery',
                 'content' => json_encode($gallery)
+            ],
+            [
+                'section' => 'award',
+                'content' => json_encode($award)
+            ],
+            [
+                'section' => 'aroundHouse',
+                'content' => json_encode($aroundHouse)
             ]
         ];
 

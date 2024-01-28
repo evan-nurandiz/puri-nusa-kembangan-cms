@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\BannerController;
 use Illuminate\Support\Facades\Route;
@@ -55,9 +56,19 @@ Route::middleware(['verifiedAdmin'])->group(function(){
     Route::post('/admin/gallery-cms', [CmsController::class, 'AdminGalleryStore'])->name('admin-gallery-cms-store');
     Route::post('/admin/gallery-cms/edit', [CmsController::class, 'AdminGalleryUpdate'])->name('admin-gallery-cms-update');
     Route::delete('/admin/gallery-cms/{id}/delete', [CmsController::class, 'AdminGalleryDelete'])->name('admin-gallery-cms-delete');
-    Route::get('/admin/award-cms', [CmsController::class, 'AdminGalleryView'])->name('admin-gallery-cms');
-    Route::post('/admin/award-cms', [CmsController::class, 'AdminGalleryStore'])->name('admin-gallery-cms-store');
-    Route::post('/admin/award-cms/edit', [CmsController::class, 'AdminGalleryUpdate'])->name('admin-gallery-cms-update');
-    Route::delete('/admin/award-cms/{id}/delete', [CmsController::class, 'AdminGalleryDelete'])->name('admin-gallery-cms-delete');
+    Route::get('/admin/award-cms', [CmsController::class, 'AdminAwardView'])->name('admin-award-cms');
+    Route::get('/admin/award-cms/create', [CmsController::class, 'AdminAwardCreateView'])->name('admin-award-cms-create');
+    Route::post('/admin/award-cms', [CmsController::class, 'AdminAwardStore'])->name('admin-award-cms-store');
+    Route::get('/admin/award-cms/{id}/edit', [CmsController::class, 'AdminAwardEditView'])->name('admin-award-cms-edit');
+    Route::patch('/admin/award-cms/{id}/edit', [CmsController::class, 'AdminAwardUpdate'])->name('admin-award-cms-update');
+    Route::delete('/admin/award-cms/{id}/delete', [CmsController::class, 'AdminAwardDelete'])->name('admin-award-cms-delete');
+    Route::get('/admin/around-house-cms', [CmsController::class, 'AdminAroundHouseView'])->name('admin-around-house-cms');
+    Route::patch('/admin/around-house-cms', [CmsController::class, 'AdminAroundHouseUpdate'])->name('admin-around-house-cms-update');
+    Route::get('/admin/article', [ArticleController::class, 'AdminArticleView'])->name('admin-article-cms');
+    Route::get('/admin/article/create', [ArticleController::class, 'AdminArticleCreateView'])->name('admin-article-create-cms');
+    Route::post('/admin/article/create', [ArticleController::class, 'AdminArticleCreateView'])->name('admin-article-store-cms');
+    Route::get('/admin/article/{id}/edit', [ArticleController::class, 'AdminArticleEditView'])->name('admin-article-edit-cms');
+    Route::patch('/admin/article/{id}/edit', [ArticleController::class, 'AdminArticleView'])->name('admin-article-update-cms');
+    Route::delete('/admin/article/{id}/delete', [ArticleController::class, 'AdminArticleView'])->name('admin-article-delete-cms');
 });
 

@@ -50,6 +50,7 @@
                         filenameLabel="house_type_image_file_name"
                         fileImagePreview="{{ isset($content) ? $content->house_type_image : '' }}"
                         fileDefaultValue="{{ isset($content) ? 'house_type_image' : '' }}"
+                        formatInfo="PNG. JPG (Recomended. 419X532). max: 2MB."
                     />
                 </div>
             </div>
