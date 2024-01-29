@@ -141,10 +141,28 @@
                                 <a href="/"><img src="{{asset('assets/images/main-icon.svg')}}" alt=""></a>
                             </div>
                         </div>
-                        <!-- <div class="main-menu__main-menu-box">
+                        <div class="main-menu__main-menu-box">
                             <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                             <ul class="main-menu__list">
-                                <li class="dropdown current">
+                                <li class="">
+                                    <a href="#konsep">Konsep</a>
+                                </li>
+                                <li class="">
+                                    <a href="#keunggulan">Keunggulan</a>
+                                </li>
+                                <li class="">
+                                    <a href="#layout">Layout</a>
+                                </li>
+                                <li class="">
+                                    <a href="#tipe">Tipe</a>
+                                </li>
+                                <li class="">
+                                    <a href="#sekeliling">Sekeliling</a>
+                                </li>
+                                <li class="">
+                                    <a href="#artikel">Artikel</a>
+                                </li>
+                                <!-- <li class="dropdown current">
                                     <a href="/">Home </a>
                                     <ul class="shadow-box">
                                         <li><a href="/">Home One</a></li>
@@ -190,19 +208,19 @@
                                 </li>
                                 <li>
                                     <a href="contact.html">Contact</a>
-                                </li>
+                                </li> -->
                             </ul>
-                        </div> -->
-                        <div class="main-menu__right">
+                        </div>
+                        <!-- <div class="main-menu__right">
                             <div class="main-menu__search-btn-box">
-                                <!-- <div class="main-menu__search-box">
+                                <div class="main-menu__search-box">
                                     <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
-                                </div> -->
+                                </div>
                                 <div class="main-menu__btn-box">
                                     <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?" class="thm-btn main-menu__btn" target="_blank">JADWALKAN VISIT</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </nav>
@@ -286,7 +304,7 @@
         <!--Main Slider End-->
 
         <!--About One Start-->
-        <section class="about-one">
+        <section class="about-one" id="konsep">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
@@ -399,7 +417,7 @@
         <!--Counter One End-->
 
         <!--Feature One Start-->
-        <section class="feature-one">
+        <section class="feature-one" id="keunggulan" style="padding-bottom: 0;">
             <div class="feature-one__bg-box">
                 <div class="feature-one__bg"></div>
             </div>
@@ -525,7 +543,7 @@
         <!--Feature One End-->
 
         <!--Floor Plan Start-->
-        <section class="floor-plan">
+        <section class="floor-plan" id="layout" style="padding-top: 120px;">
             <div class="container">
                 <div class="section-title text-center">
                     <span class="section-title__tagline">Layout Rumah</span>
@@ -653,8 +671,8 @@
         <!--Floor Plan End-->
 
         <!--Apartments One Start-->
-        <section class="apartments-one">
-            <div class="container">
+        <section class="apartments-one" id="tipe">
+            <div class="container" style="padding-top:120px">
                 <div class="section-title text-center">
                     <span class="section-title__tagline">{{ $houseType['content']->house_type_small_title }}</span>
                     <h2 class="section-title__title">{{ $houseType['content']->house_type_big_title }}</h2>
@@ -690,7 +708,7 @@
         <!--Apartments One End-->
 
         <!--Neighborhoods Start-->
-        <section class="neighborhoods">
+        <section class="neighborhoods" id="sekeliling">
             <div class="neighborhoods-bg"
                 style="background-image: url('{{ asset('/assets/images/neighborhoods-bg.jpg')}}');"></div>
             <div class="container">
@@ -885,8 +903,8 @@
         <!--Contact One End-->
 
         <!--News One Start-->
-        <section class="news-one">
-            <div class="container" style="margin-top: 240px; margin-bottom: 240px">
+        <section class="news-one" style="padding-top: 120px;" id="artikel">
+            <div class="container">
                 <div class="section-title text-center">
                     <span class="section-title__tagline">What’s Happening</span>
                     <h2 class="section-title__title">Latest news updates <br> & articles</h2>
@@ -1255,6 +1273,14 @@
     <script src="{{url('/assets/vendors/circleType/jquery.lettering.min.js')}}"></script>
     <!-- template js -->
     <script src="{{url('/js/aports.js')}}"></script>
+
+    <script type="text/javascript">
+        $(".main-menu__list a").click(function(){
+            $(".main-menu__list li").removeClass("current")
+            a = $(this).attr("href")
+            $("[href='"+a+"']").parent().addClass("current")
+        })
+    </script>
 </body>
 
 </html>
