@@ -66,9 +66,9 @@ Route::middleware(['verifiedAdmin'])->group(function(){
     Route::patch('/admin/around-house-cms', [CmsController::class, 'AdminAroundHouseUpdate'])->name('admin-around-house-cms-update');
     Route::get('/admin/article', [ArticleController::class, 'AdminArticleView'])->name('admin-article-cms');
     Route::get('/admin/article/create', [ArticleController::class, 'AdminArticleCreateView'])->name('admin-article-create-cms');
-    Route::post('/admin/article/create', [ArticleController::class, 'AdminArticleCreateView'])->name('admin-article-store-cms');
+    Route::post('/admin/article/create', [ArticleController::class, 'AdminArticleStore'])->name('admin-article-store-cms');
     Route::get('/admin/article/{id}/edit', [ArticleController::class, 'AdminArticleEditView'])->name('admin-article-edit-cms');
-    Route::patch('/admin/article/{id}/edit', [ArticleController::class, 'AdminArticleView'])->name('admin-article-update-cms');
-    Route::delete('/admin/article/{id}/delete', [ArticleController::class, 'AdminArticleView'])->name('admin-article-delete-cms');
+    Route::patch('/admin/article/{id}/edit', [ArticleController::class, 'AdminArticleUpdate'])->name('admin-article-update-cms');
+    Route::delete('/admin/article/{id}/delete', [ArticleController::class, 'AdminArticleDelete'])->name('admin-article-delete-cms');
 });
 

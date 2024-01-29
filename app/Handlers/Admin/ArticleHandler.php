@@ -17,6 +17,12 @@ class ArticleHandler{
         return $this->article->paginate(15);
     }
 
+    public function getArticleWithLimit($limit)
+    {
+        return $this->article->paginate($limit);
+    }
+
+
     public function getArticleById($id)
     {
         return $this->article->find($id);

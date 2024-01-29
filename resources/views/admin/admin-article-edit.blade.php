@@ -9,9 +9,16 @@
 @endsection
 @section('content')
 <div class="mt-[22px]">
-    <form action="{{route('admin-banner-store-cms')}}" enctype="multipart/form-data" 
+    <form action="{{
+        isset($article) ? route('admin-article-update-cms', [
+            'id' => $article->id    
+        ]) : route('admin-article-store-cms')
+    }}" enctype="multipart/form-data" 
     method="POST">
         @csrf
+        @if(isset($article))
+            @method('PATCH')
+        @endif
         <div class="form-container vertical">
             <div class="grid grid-cols-3 gap-[32px]">
                 <div class="col-span-2">

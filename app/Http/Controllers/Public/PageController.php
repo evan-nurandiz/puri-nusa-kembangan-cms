@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Public;
 
+use App\Handlers\Admin\ArticleHandler;
 use App\Handlers\Admin\BannerHandler;
 use App\Handlers\Admin\CmsHandler;
 use App\Http\Controllers\Controller;
@@ -10,29 +11,36 @@ class PageController extends Controller
 {
     protected $cmsHandlers;
     protected $bannerHandlers;
+    protected $articleHandlers;
 
-    public function __construct(CmsHandler $cmsHandlers, BannerHandler $bannerHandlers)
+    public function __construct(CmsHandler $cmsHandlers, BannerHandler $bannerHandlers, ArticleHandler $articleHandlers)
     {
         $this->cmsHandlers = $cmsHandlers;
         $this->bannerHandlers = $bannerHandlers;
+        $this->articleHandlers = $articleHandlers;
     }
 
     public function Home() {
-        $general = $this->cmsHandlers->getContentBySection('general');
-        $concept = $this->cmsHandlers->getContentBySection('concept');
-        $benefit = $this->cmsHandlers->getContentBySection('benefit');
-        $houseType = $this->cmsHandlers->getContentBySection('houseType');
+        $contents = $this->cmsHandlers->getAllContent();
+        $webContent = [];
+
+        foreach($contents as $content) {
+            $webContent[$content->section] = $content;
+            $webContent[$content->section]['content'] = json_decode($content->content);
+        }
         $banners = $this->bannerHandlers->getBanner();
-        $general['content'] = json_decode($general['content']);
-        $concept['content'] = json_decode($concept['content']);
-        $benefit['content'] = json_decode($benefit['content']);
-        $houseType['content'] = json_decode($houseType['content']);
+        $articles = $this->articleHandlers->getArticleWithLimit(3);
         return view('public.home', [
-            'general' => $general,
+            'general' => $webContent['general'],
             'banners' => $banners,
-            'concept' => $concept,
-            'benefit' => $benefit,
-            'houseType' => $houseType
+            'articles' => $articles,
+            'concept' => $webContent['concept'],
+            'benefit' => $webContent['benefit'],
+            'houseType' => $webContent['houseType'],
+            'houseLayout' => $webContent['houseLayout'],
+            'aroundHouse' => $webContent['aroundHouse'],
+            'galleries' => $webContent['gallery'],
+            'awards' => $webContent['award']
         ]);
     }
 }

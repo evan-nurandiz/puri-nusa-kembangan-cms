@@ -34,9 +34,9 @@
                 <td class="w-[370px] h-[417px] px-[1rem] py-[1.5rem]">
                     <img src="{{asset('storage/images/'.$article->article_thumbnail)}}" alt="">
                 </td>
-                <td class="w-[20%] px-[1rem] py-[1.5rem] text-[#32343B]">{{$article->title}}</td>
+                <td class="w-[20%] px-[1rem] py-[1.5rem] text-[#32343B]">{{$article->article_title}}</td>
                 <td class="w-[20%] px-[1rem] py-[1.5rem] text-[#32343B]">{{ \Carbon\Carbon::parse($article->updated_at)->format('d/m/y h:m') }}</td>
-                <td class="w-[10%] px-[1rem] py-[1.5rem] text-[#32343B]">{{$article->created_by}}</td>
+                <td class="w-[10%] px-[1rem] py-[1.5rem] text-[#32343B]">{{$article->article_created_by}}</td>
                 <td class="w-[20%] px-[1rem] py-[1.5rem]">
                     <div class="mb-3 flex">
                         <a href="{{route('admin-article-edit-cms', [
@@ -44,7 +44,7 @@
                         ])}}">
                             <button class="btn text-[#029764] text-[16px] font-bold">Edit</button>
                         </a>
-                        <form action="{{route('admin-banner-delete-cms',[
+                        <form action="{{route('admin-article-delete-cms',[
                                 'id' => $article->id    
                             ])}}" method="post">
                             @csrf

@@ -66,7 +66,7 @@
     <!-- template styles -->
     <link rel="stylesheet" href="{{url('/assets/css/aports.css')}}" />
     <link rel="stylesheet" href="{{url('/assets/css/aports-responsive.css')}}" />
-    {!!$general['content']->tiktok_pixel_script!!}
+    {!!$general->content->tiktok_pixel_script!!}
 
     @if(isset($general->meta_pixel_script))
         {!!$general->meta_pixel_script!!}
@@ -312,10 +312,10 @@
                             <div class="about-one__big-text">Purinusa</div>
                             <div class="about-one__img-box">
                                 <div class="about-one__img-one">
-                                    <img src="{{asset('storage/images/'.$concept['content']->concept_big_image)}}" alt="">
+                                    <img src="{{asset('storage/images/'.$concept->content->concept_big_image)}}" alt="">
                                 </div>
                                 <div class="about-one__img-two">
-                                    <img src="{{asset('storage/images/'.$concept['content']->concept_small_image)}}" alt="">
+                                    <img src="{{asset('storage/images/'.$concept->content->concept_small_image)}}" alt="">
                                 </div>
                                 <div class="about-one__shape-1 float-bob-y"></div>
                                 <div class="about-one__shape-2">
@@ -327,17 +327,17 @@
                     <div class="col-xl-6">
                         <div class="about-one__right">
                             <div class="section-title text-left">
-                                <span class="section-title__tagline">{{ $concept['content']->concept_small_title }}</span>
-                                <h2 class="section-title__title">{{ $concept['content']->concept_title }}</h2>
+                                <span class="section-title__tagline">{{ $concept->content->concept_small_title }}</span>
+                                <h2 class="section-title__title">{{ $concept->content->concept_title }}</h2>
                             </div>
-                            <p class="about-one__text">{{ $concept['content']->concept_description }}</p>
+                            <p class="about-one__text">{{ $concept->content->concept_description }}</p>
                             <ul class="list-unstyled about-one__points">
                                 <li>
                                     <div class="icon">
                                         <i class="fa fa-check"></i>
                                     </div>
                                     <div class="text">
-                                        <p>{{ $concept['content']->concept_usp_1_description }}</p>
+                                        <p>{{ $concept->content->concept_usp_1_description }}</p>
                                     </div>
                                 </li>
                                 <li>
@@ -345,7 +345,7 @@
                                         <i class="fa fa-check"></i>
                                     </div>
                                     <div class="text">
-                                        <p>{{ $concept['content']->concept_usp_2_description }}</p>
+                                        <p>{{ $concept->content->concept_usp_2_description }}</p>
                                     </div>
                                 </li>
                                 <li>
@@ -353,7 +353,7 @@
                                         <i class="fa fa-check"></i>
                                     </div>
                                     <div class="text">
-                                        <p>{{ $concept['content']->concept_usp_3_description }}</p>
+                                        <p>{{ $concept->content->concept_usp_3_description }}</p>
                                     </div>
                                 </li>
                             </ul>
@@ -377,8 +377,8 @@
                                         <span class="icon-size"></span>
                                     </div>
                                     <div class="counter-one__content-box count-box">
-                                        <h3 class="count-text" data-stop="{{$concept['content']->concept_description_1_count}}" data-speed="1500">0</h3>
-                                        <p class="counter-one__text">{{$concept['content']->concept_description_1_description}}</p>
+                                        <h3 class="count-text" data-stop="{{$concept->content->concept_description_1_count}}" data-speed="1500">0</h3>
+                                        <p class="counter-one__text">{{$concept->content->concept_description_1_description}}</p>
                                     </div>
                                 </li>
                                 <li class="counter-one__single wow fadeInLeft" data-wow-delay="200ms">
@@ -386,8 +386,8 @@
                                         <span class="icon-parking"></span>
                                     </div>
                                     <div class="counter-one__content-box count-box">
-                                        <h3 class="count-text" data-stop="{{$concept['content']->concept_description_2_count}}" data-speed="1500">0</h3>
-                                        <p class="counter-one__text">{{$concept['content']->concept_description_2_description}}</p>
+                                        <h3 class="count-text" data-stop="{{$concept->content->concept_description_2_count}}" data-speed="1500">0</h3>
+                                        <p class="counter-one__text">{{$concept->content->concept_description_2_description}}</p>
                                     </div>
                                 </li>
                                 <li class="counter-one__single wow fadeInLeft" data-wow-delay="300ms">
@@ -395,8 +395,8 @@
                                         <span class="icon-apartments"></span>
                                     </div>
                                     <div class="counter-one__content-box count-box">
-                                        <h3 class="count-text" data-stop="{{$concept['content']->concept_description_3_count}}" data-speed="1500">0</h3>
-                                        <p class="counter-one__text">{{$concept['content']->concept_description_3_description}}</p>
+                                        <h3 class="count-text" data-stop="{{$concept->content->concept_description_3_count}}" data-speed="1500">0</h3>
+                                        <p class="counter-one__text">{{$concept->content->concept_description_3_description}}</p>
                                     </div>
                                 </li>
                                 <li class="counter-one__single wow fadeInLeft" data-wow-delay="400ms">
@@ -404,8 +404,8 @@
                                         <span class="icon-hotel-bed"></span>
                                     </div>
                                     <div class="counter-one__content-box count-box">
-                                        <h3 class="count-text" data-stop="{{$concept['content']->concept_description_4_count}}" data-speed="1500">0</h3>
-                                        <p class="counter-one__text">{{$concept['content']->concept_description_4_description}}</p>
+                                        <h3 class="count-text" data-stop="{{$concept->content->concept_description_4_count}}" data-speed="1500">0</h3>
+                                        <p class="counter-one__text">{{$concept->content->concept_description_4_description}}</p>
                                     </div>
                                 </li>
                             </ul>
@@ -429,12 +429,12 @@
                     <div class="col-xl-5">
                         <div class="feature-one__left">
                             <div class="section-title text-left">
-                                <span class="section-title__tagline">{{ $benefit['content']->benefit_small_title }}</span>
-                                <h2 class="section-title__title">{{ $benefit['content']->benefit_title }}</h2>
+                                <span class="section-title__tagline">{{ $benefit->content->benefit_small_title }}</span>
+                                <h2 class="section-title__title">{{ $benefit->content->benefit_title }}</h2>
                             </div>
-                            <p class="feature-one__text">{{ $benefit['content']->benefit_description }}</p>
+                            <p class="feature-one__text">{{ $benefit->content->benefit_description }}</p>
                             <div class="feature-one__video-link">
-                                <a href="{{ $benefit['content']->benefit_vidio_youtube_url }}" class="video-popup">
+                                <a href="{{ $benefit->content->benefit_vidio_youtube_url }}" class="video-popup">
                                     <div class="feature-one__video-icon">
                                         <span class="fa fa-play"></span>
                                         <i class="ripple"></i>
@@ -446,7 +446,7 @@
                                     <li>
                                         <div class="feature-one__counter-content-box">
                                             <div class="feature-one__counter-count-box count-box">
-                                                <h3 id="count-text-black" class="count-text" data-stop="{{ $benefit['content']->benefit_total_unit }}" data-speed="1500">00</h3>
+                                                <h3 id="count-text-black" class="count-text" data-stop="{{ $benefit->content->benefit_total_unit }}" data-speed="1500">00</h3>
                                                 <span class="feature-one__counter-plus">+</span>
                                             </div>
                                             <p class="feature-one__counter-text">Unit</p>
@@ -455,7 +455,7 @@
                                     <li>
                                         <div class="feature-one__counter-content-box">
                                             <div class="feature-one__counter-count-box count-box">
-                                                <h3 id="count-text-black" class="count-text" data-stop="{{ $benefit['content']->benefit_total_area }}" data-speed="1500">00</h3>
+                                                <h3 id="count-text-black" class="count-text" data-stop="{{ $benefit->content->benefit_total_area }}" data-speed="1500">00</h3>
                                                 <span class="feature-one__counter-plus">+</span>
                                             </div>
                                             <p class="feature-one__counter-text">m2</p>
@@ -475,8 +475,8 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-residential"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">{{ $benefit['content']->benefit_1_title }}</a></h3>
-                                            <p class="feature-one__text">{{ $benefit['content']->benefit_1_description }}</p>
+                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">{{ $benefit->content->benefit_1_title }}</a></h3>
+                                            <p class="feature-one__text">{{ $benefit->content->benefit_1_description }}</p>
                                             <div class="feature-one__btn">
                                                 <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?l"> <i class="fa fa-arrow-right"></i>Read More</a>
                                             </div>
@@ -491,9 +491,9 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-sustainable"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">{{ $benefit['content']->benefit_2_title }}</a>
+                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">{{ $benefit->content->benefit_2_title }}</a>
                                             </h3>
-                                            <p class="feature-one__text">{{ $benefit['content']->benefit_2_description }}</p>
+                                            <p class="feature-one__text">{{ $benefit->content->benefit_2_description }}</p>
                                             <div class="feature-one__btn">
                                                 <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?"> <i class="fa fa-arrow-right"></i>Read More</a>
                                             </div>
@@ -508,8 +508,8 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-world"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">{{ $benefit['content']->benefit_3_title }}</a></h3>
-                                            <p class="feature-one__text">{{ $benefit['content']->benefit_3_description }}</p>
+                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">{{ $benefit->content->benefit_3_title }}</a></h3>
+                                            <p class="feature-one__text">{{ $benefit->content->benefit_3_description }}</p>
                                             <div class="feature-one__btn">
                                                 <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?"> <i class="fa fa-arrow-right"></i>Read More</a>
                                             </div>
@@ -524,9 +524,9 @@
                                             <div class="feature-one__icon">
                                                 <span class="icon-home-automation"></span>
                                             </div>
-                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">{{ $benefit['content']->benefit_4_title }}</a>
+                                            <h3 class="feature-one__title"><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">{{ $benefit->content->benefit_4_title }}</a>
                                             </h3>
-                                            <p class="feature-one__text">{{ $benefit['content']->benefit_4_description }}</p>
+                                            <p class="feature-one__text">{{ $benefit->content->benefit_4_description }}</p>
                                             <div class="feature-one__btn">
                                                 <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?"> <i class="fa fa-arrow-right"></i>Read More</a>
                                             </div>
@@ -546,124 +546,58 @@
         <section class="floor-plan" id="layout" style="padding-top: 120px;">
             <div class="container">
                 <div class="section-title text-center">
-                    <span class="section-title__tagline">Layout Rumah</span>
-                    <h2 class="section-title__title">Layout Rumah</h2>
-                    <p class="floor-plan__text">Layout yang kami rancangkan dengan se-efisien mungkin sesuai <br> kebutuhan kalian dari 2 lantai hingga juga 3 lantai.</p>
+                    <span class="section-title__tagline">{{ $houseLayout->content->house_layout_small_title }}</span>
+                    <h2 class="section-title__title">{{ $houseLayout->content->house_layout_big_title }}</h2>
+                    <p class="floor-plan__text">{{ $houseLayout->content->house_layout_description }}</p>
                 </div>
                 <div class="floor-plan__main-tab-box tabs-box">
                     <ul class="tab-buttons clearfix list-unstyled">
-                        <li data-tab="#penthouse" class="tab-btn active-btn"><span>Tipe 2 Lantai</span></li>
-                        <li data-tab="#stuido" class="tab-btn"><span>Tipe 3 Lantai</span></li>
+                        @foreach($houseLayout->content->house_layout_list as $house)
+                            <li data-tab="{{ '#tipe'.$house->house_floor.'lantai' }}" class="tab-btn {{ $loop->iteration == 1 ? 'active-btn' : '' }}"><span>Tipe {{ $house->house_floor }} Lantai</span></li>
+                        @endforeach
                     </ul>
+                    
                     <div class="tabs-content">
                         <!--tab-->
-                        <div class="tab active-tab" id="penthouse">
+                        @foreach($houseLayout->content->house_layout_list as $house_list)
+                        <div class="tab {{ $loop->iteration == 1 ? 'active-tab' : '' }}" id="{{ 'tipe'.$house_list->house_floor.'lantai' }}">
                             <div class="floor-plan__tab-content-inner">
                                 <div class="floor-plan__tab-content-left">
                                     <ul class="list-unstyled floor-plan__tab-content-details">
                                         <li>
                                             <p>Total area</p>
-                                            <span>60/110 m2</span>
+                                            <span>{{ $house_list->house_area_total }}</span>
                                         </li>
                                         <li>
                                             <p>Floor</p>
-                                            <span>2</span>
+                                            <span>{{ $house_list->house_floor }}</span>
                                         </li>
                                         <li>
                                             <p>Current status</p>
-                                            <span>Development</span>
+                                            <span>{{ $house_list->house_status }}</span>
                                         </li>
                                         <li>
                                             <p>Bedroom</p>
-                                            <span>3</span>
+                                            <span>{{ $house_list->house_bedroom }}</span>
                                         </li>
                                         <li>
                                             <p>Bathroom</p>
-                                            <span>3</span>
+                                            <span>{{ $house_list->house_bathroom }}</span>
                                         </li>
                                         <li>
                                             <p>Carport</p>
-                                            <span>1</span>
+                                            <span>{{ $house_list->house_carport }}</span>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="floor-plan__tab-content-center">
-                                    <img src="{{asset('assets/images/home-layout.png')}}" alt="">
+                                    <img src="{{asset('assets/images/'. $house_list->house_layout_image)}}" alt="">
                                 </div>
                             </div>
                         </div>
+                        @endforeach
                         <!--tab-->
-                        <div class="tab " id="stuido">
-                            <div class="floor-plan__tab-content-inner">
-                                <div class="floor-plan__tab-content-left">
-                                    <ul class="list-unstyled floor-plan__tab-content-details">
-                                        <li>
-                                            <p>Total area</p>
-                                            <span>60/140 m2</span>
-                                        </li>
-                                        <li>
-                                            <p>Floor</p>
-                                            <span>3</span>
-                                        </li>
-                                        <li>
-                                            <p>Current status</p>
-                                            <span>Development</span>
-                                        </li>
-                                        <li>
-                                            <p>Bedroom</p>
-                                            <span>4</span>
-                                        </li>
-                                        <li>
-                                            <p>Bathroom</p>
-                                            <span>4</span>
-                                        </li>
-                                        <li>
-                                            <p>Carport</p>
-                                            <span>1</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="floor-plan__tab-content-center">
-                                    <img src="{{asset('assets/images/home-layout-2.png')}}" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!--tab-->
-                        <div class="tab " id="duplex">
-                            <div class="floor-plan__tab-content-inner">
-                                <div class="floor-plan__tab-content-left">
-                                    <ul class="list-unstyled floor-plan__tab-content-details">
-                                        <li>
-                                            <p>Total area</p>
-                                            <span>2800 Sq. Ft</span>
-                                        </li>
-                                        <li>
-                                            <p>Floor no.</p>
-                                            <span>2nd</span>
-                                        </li>
-                                        <li>
-                                            <p>Current status</p>
-                                            <span>Available</span>
-                                        </li>
-                                        <li>
-                                            <p>No. of rooms</p>
-                                            <span>04</span>
-                                        </li>
-                                        <li>
-                                            <p>Parking available</p>
-                                            <span>Yes</span>
-                                        </li>
-                                        <li>
-                                            <p>Price from</p>
-                                            <span>$4500</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="floor-plan__tab-content-righ">
-                                    <img src="{{asset('assets/images/floor-plan-tab-content-img-1.png')}}" alt="">
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -674,12 +608,12 @@
         <section class="apartments-one" id="tipe">
             <div class="container" style="padding-top:120px">
                 <div class="section-title text-center">
-                    <span class="section-title__tagline">{{ $houseType['content']->house_type_small_title }}</span>
-                    <h2 class="section-title__title">{{ $houseType['content']->house_type_big_title }}</h2>
+                    <span class="section-title__tagline">{{ $houseType->content->house_type_small_title }}</span>
+                    <h2 class="section-title__title">{{ $houseType->content->house_type_big_title }}</h2>
                 </div>
                 <div class="row">
                     <!--Apartments One Single Start-->
-                    @foreach($houseType['content']->house_types_list as $houseTypeList)
+                    @foreach($houseType->content->house_types_list as $houseTypeList)
                     <div class="col-xl-6 col-lg-6 col-md-6">
                         <div class="apartments-one__single">
                             <div class="apartments-one__img">
@@ -727,14 +661,9 @@
                                         </div>
                                         <div class="accrodion-content">
                                             <div class="inner">
-                                                <p>1. Mal Puri Indah</p>
-                                                <p>2. Lippo Mall Puri</p>
-                                                <p>3. Plaza Senayan</p>
-                                                <p>4. Pondok Indah Mall</p>
-                                                <p>5. Ikea Alam Sutera</p>
-                                                <p>6. Swalayan Superindo</p>
-                                                <p>7. Lotte Grosir</p>
-                                                <p>8. Ranch Market</p>
+                                                @foreach($aroundHouse->content->shopping_list as $shopping)
+                                                    <p>{{$loop->iteration}}. {{$shopping}}</p>
+                                                @endforeach
                                             </div><!-- /.inner -->
                                         </div>
                                     </div>
@@ -744,14 +673,9 @@
                                         </div>
                                         <div class="accrodion-content">
                                             <div class="inner">
-                                                <p>1. Universitas Binus</p>
-                                                <p>2. Universitas Multimedia Nusantara</p>
-                                                <p>3. Universitas Mercu Buana</p>
-                                                <p>4. Universitas Esa Unggul</p>
-                                                <p>5. Sekolah International IPEKA</p>
-                                                <p>6. SMP Notre Dame</p>
-                                                <p>7. SD Penabur</p>
-                                                <p>8. TK Stela Maris</p>
+                                                @foreach($aroundHouse->content->school_list as $school)
+                                                    <p>{{$loop->iteration}}. {{$school}}</p>
+                                                @endforeach
                                             </div><!-- /.inner -->
                                         </div>
                                     </div>
@@ -761,9 +685,9 @@
                                         </div>
                                         <div class="accrodion-content">
                                             <div class="inner">
-                                                <p>1. Rumah Sakit Siloam</p>
-                                                <p>2. Rumah Sakit Mandaya</p>
-                                                <p>3. Rumah Sakit Pondok Indah Puri</p>
+                                                @foreach($aroundHouse->content->hospital_list as $hospital)
+                                                    <p>{{$loop->iteration}}. {{$hospital}}</p>
+                                                @endforeach
                                             </div><!-- /.inner -->
                                         </div>
                                     </div>
@@ -773,8 +697,9 @@
                                         </div>
                                         <div class="accrodion-content">
                                             <div class="inner">
-                                                <p>1. Pintu Tol Meruya</p>
-                                                <p>2. Pintu Tol Joglo</p>
+                                                @foreach($aroundHouse->content->express_way_list as $way)
+                                                    <p>{{$loop->iteration}}. {{$way}}</p>
+                                                @endforeach
                                             </div><!-- /.inner -->
                                         </div>
                                     </div>
@@ -783,7 +708,7 @@
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-7">
-                        <img src="{{asset('assets/images/map-1.png')}}" alt="" style="width:100%;padding: 15px 0px;">
+                        <img src="{{asset('assets/images/'. $aroundHouse->content->around_house_image )}}" alt="" style="width:100%;padding: 15px 0px;">
                         <!-- <div class="neighborhoods__right">
                             <div class="neighborhoods__img-box">
                                 <div class="neighborhoods__img">
@@ -882,13 +807,15 @@
                         },
                         "1199": {
                             "spaceBetween": 20,
-                            "slidesPerView": 1
+                            "slidesPerView": 2
                         }
                     }}'>
                                 <div class="swiper-wrapper">
+                                    @foreach($awards->content->award_list as $award)
                                     <div class="swiper-slide">
-                                        <img src="{{asset('assets/images/thropy-list.svg')}}" alt="">
+                                        <img src="{{asset('assets/images/'. $award->award_image)}}" alt="">
                                     </div><!-- /.swiper-slide -->
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -911,19 +838,20 @@
                 </div>
                 <div class="row">
                     <!--News One Single Start-->
+                    @foreach($articles as $article)
                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
                         <div class="news-one__single">
                             <div class="news-one__img">
-                                <img src="https://asset.kompas.com/crops/gxFLT6KuAHJDDKrd2CFLrHnlcJU=/0x0:4160x2773/750x500/data/photo/2023/11/29/6566e0b7493f4.jpg" alt="">
+                                <img src="{{asset('assets/images/'. $article->article_thumbnail)}}" alt="">
                             </div>
                             <div class="news-one__content-box">
                                 <div class="news-one__date">
-                                    <p>18 april</p>
+                                    <p>{{ \Carbon\Carbon::parse($article->created_at)->format('d M') }}</p>
                                 </div>
-                                <div class="news-one__content">
-                                    <p class="news-one__author">by Muhdany Yusuf Laksono</p>
+                                <div class="news-one__content" style="height: 228px;">
+                                    <p class="news-one__author">by {{ $article->article_created_by }}</p>
                                     <h3 class="news-one__title"><a href="https://www.kompas.com/properti/read/2023/11/29/143000221/sambut-momen-gratis-ppn-purinusa-jayakusuma-rilis-hunian-baru-di-jakbar?page=all">
-                                        Sambut Momen Gratis PPN, Purinusa Jayakusuma Rilis Hunian Baru di Jakbar</a></h3>
+                                        {{$article->article_title}}</a></h3>
                                 </div>
                                 <div class="news-one__bottom">
                                     <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?" class="news-one__more"> <i
@@ -934,60 +862,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--News One Single End-->
-                    <!--News One Single Start-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
-                        <div class="news-one__single">
-                            <div class="news-one__img">
-                                <img src="https://img.inews.co.id/media/600/files/networks/2023/11/28/5e559_purinusa-kembangan.jpg" alt="">
-                            </div>
-                            <div class="news-one__content-box">
-                                <div class="news-one__date">
-                                    <p>18 april</p>
-                                </div>
-                                <div class="news-one__content">
-                                    <p class="news-one__author">by Darmawan</p>
-                                    <h3 class="news-one__title"><a href="https://tangsel.inews.id/view/376162/purinusa-kembangan-ditargetkan-soldout-diawal-tahun-2024">Purinusa Kembangan Ditargetkan Soldout Diawal Tahun 2024 
-                                        <br>
-                                        <br>
-                                        <br>
-                                    </a></h3>
-                                </div>
-                                <div class="news-one__bottom">
-                                    <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?" class="news-one__more"> <i
-                                            class="fa fa-arrow-right"></i> Read More</a>
-                                    <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?" class="news-one__comments"> <i
-                                            class="fas fa-comments"></i> 2 Comments</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--News One Single End-->
-                    <!--News One Single Start-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="news-one__single">
-                            <div class="news-one__img">
-                                <img src="https://asset.kompas.com/crops/gxFLT6KuAHJDDKrd2CFLrHnlcJU=/0x0:4160x2773/750x500/data/photo/2023/11/29/6566e0b7493f4.jpg" alt="">
-                            </div>
-                            <div class="news-one__content-box">
-                                <div class="news-one__date">
-                                    <p>18 april</p>
-                                </div>
-                                <div class="news-one__content">
-                                    <p class="news-one__author">by Muhdany Yusuf Laksono</p>
-                                    <h3 class="news-one__title"><a href="https://www.kompas.com/properti/read/2023/11/29/143000221/sambut-momen-gratis-ppn-purinusa-jayakusuma-rilis-hunian-baru-di-jakbar?page=all">
-                                        Sambut Momen Gratis PPN, Purinusa Jayakusuma Rilis Hunian Baru di Jakbar</a></h3>
-                                </div>
-                                <div class="news-one__bottom">
-                                    <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?" class="news-one__more"> <i
-                                            class="fa fa-arrow-right"></i> Read More</a>
-                                    <a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?" class="news-one__comments"> <i
-                                            class="fas fa-comments"></i> 2 Comments</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--News One Single End-->
+                    @endforeach
                 </div>
             </div>
         </section>
@@ -1021,69 +896,19 @@
                     }
                 }'>
                     <!--Gallery One Single Start-->
+                    @foreach($galleries->content->gallery_list as $gallery)
                     <div class="item">
                         <div class="gallery-one__single">
                             <div class="gallery-one__img">
-                                <img src="{{asset('assets/images/highlight-1.png')}}" alt="" style="height: 203px;">
+                                <img src="{{asset('assets/images/'. $gallery)}}" alt="" style="height: 203px;">
                                 <div class="gallery-one__icon">
-                                    <a class="img-popup" href="{{asset('assets/images/highlight-1.png')}}"><span
+                                    <a class="img-popup" href="{{asset('assets/images/'.$gallery)}}"><span
                                             class="fa fa-plus"></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--Gallery One Single End-->
-                    <!--Gallery One Single Start-->
-                    <div class="item">
-                        <div class="gallery-one__single">
-                            <div class="gallery-one__img">
-                                <img src="{{asset('assets/images/highlight-2.png')}}" alt="" style="height: 203px;">
-                                <div class="gallery-one__icon">
-                                    <a class="img-popup" href="{{asset('assets/images/highlight-2.png')}}"><span
-                                            class="fa fa-plus"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Gallery One Single End-->
-                    <!--Gallery One Single Start-->
-                    <div class="item">
-                        <div class="gallery-one__single">
-                            <div class="gallery-one__img">
-                                <img src="{{asset('assets/images/highlight-3.png')}}" alt="" style="height: 203px;">
-                                <div class="gallery-one__icon">
-                                    <a class="img-popup" href="{{asset('assets/images/highlight-3.png')}}"><span
-                                            class="fa fa-plus"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Gallery One Single End-->
-                    <!--Gallery One Single Start-->
-                    <div class="item">
-                        <div class="gallery-one__single">
-                            <div class="gallery-one__img">
-                                <img src="{{asset('assets/images/highlight-4.png')}}" alt="" style="height: 203px;">
-                                <div class="gallery-one__icon">
-                                    <a class="img-popup" href="{{asset('assets/images/highlight-4.png')}}"><span
-                                            class="fa fa-plus"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Gallery One Single End-->
-                    <!--Gallery One Single Start-->
-                    <!-- <div class="item">
-                        <div class="gallery-one__single">
-                            <div class="gallery-one__img">
-                                <img src="assets/images/gallery/gallery-1-5.jpg" alt="">
-                                <div class="gallery-one__icon">
-                                    <a class="img-popup" href="assets/images/gallery/gallery-1-5.jpg"><span
-                                            class="fa fa-plus"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+                    @endforeach
                     <!--Gallery One Single End-->
                 </div>
             </div>
@@ -1105,13 +930,13 @@
                                         <p class="footer-widget__about-text">Your Next Level of Home </p>
                                     </div>
                                     <div class="site-footer__social">
-                                        @if(isset($general['content']->twitter_link)) 
-                                            <a href="{{$general['content']->twitter_link}}"><i class="fab fa-twitter"></i></a>
+                                        @if(isset($general->content->twitter_link)) 
+                                            <a href="{{$general->content->twitter_link}}"><i class="fab fa-twitter"></i></a>
                                         @endif
-                                        @if(isset($general['content']->facebook_link)) 
-                                            <a href="{{$general['content']->facebook_link}}"><i class="fab fa-facebook"></i></a>
+                                        @if(isset($general->content->facebook_link)) 
+                                            <a href="{{$general->content->facebook_link}}"><i class="fab fa-facebook"></i></a>
                                         @endif
-                                        <a href="{{$general['content']->instagram_link}}"><i class="fab fa-instagram"></i></a>
+                                        <a href="{{$general->content->instagram_link}}"><i class="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1149,7 +974,7 @@
                                                 <span class="fas fa-phone-alt"></span>
                                             </div>
                                             <div class="text">
-                                                <p><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">{{$general['content']->contact_number}}</a></p>
+                                                <p><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">{{$general->content->contact_number}}</a></p>
                                             </div>
                                         </li>
                                         <li>
@@ -1157,7 +982,7 @@
                                                 <span class="fas fa-clock"></span>
                                             </div>
                                             <div class="text">
-                                                <p>{{$general['content']->working_hour}}</p>
+                                                <p>{{$general->content->working_hour}}</p>
                                             </div>
                                         </li>
                                     </ul>

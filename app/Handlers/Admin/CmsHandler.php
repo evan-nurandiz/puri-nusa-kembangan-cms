@@ -19,6 +19,10 @@ class CmsHandler{
         return $this->web_contents->where('section', $section)->first();
     }
 
+    public function getAllContent() {
+        return $this->web_contents->get();
+    }
+
     public function updateContentBySection($data, $section)
     {
         return $this->web_contents->where('section', $section)->update([

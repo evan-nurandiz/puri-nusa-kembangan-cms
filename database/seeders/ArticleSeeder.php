@@ -28,7 +28,8 @@ class ArticleSeeder extends Seeder
                 'updated_at' => Date::now(),
             ],
             [
-                'article_title' => 'Purinusa Kembangan Ditargetkan Soldout Diawal Tahun 2024',
+                'article_title' => 'Purinusa Kembangan Ditargetkan Soldout Diawal Tahun 2024
+                ',
                 'article_created_by' => 'Darmawan',
                 'article_body' => 'Komisaris Aryana Karawaci Mariana, Direktur Utama Aryana Karawaci Herman, Direktur Utama Purinusa Kembangan Christine Rai Santoso, Direktur Utama Aryana Siana, dan Chief Marketing Officer Purinusa Kembangan Andre Utama (kiri-kanan) bersama-sama melepas balon sebagai tanda pembukaan kawasan hunian baru Purinusa Kembangan di Jakarta, yang dikembangkan PT Purinusa Jayakusuma, Selasa (28/11/2023).',
                 'article_thumbnail' => 'article-2.png',

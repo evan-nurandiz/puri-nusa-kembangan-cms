@@ -16,7 +16,7 @@ class WebContentSeeder extends Seeder
     {
         $concept = [
             "concept_small_title" => "KONSEP PERUMAHAN",
-            "concept_title" => "Perumahan <br> Modern & Premium",
+            "concept_title" => "Perumahan Modern & Premium",
             "concept_description" => "Perumahan dengan luas 6000 m2 dan memiliki 49 unit di Kembangan, Jakarta Barat.",
             "concept_usp_1_description" => "Design Modern & Minimalis",
             "concept_usp_2_description" => "Lokasi Strategis",
@@ -40,7 +40,7 @@ class WebContentSeeder extends Seeder
         $benefit = [
             "benefit_small_title" => "KEUNGGULAN UTAMA",
             "benefit_title" => "Fitur Utama Purinusa Kembangan",
-            "benefit_description" => "Man braid hell of edison bulb four brunch subway <br>
+            "benefit_description" => "Man braid hell of edison bulb four brunch subway
             tile authentic, chillwave put a bird on it church-key 
             try-hard ramps heirloom.",
             "benefit_vidio_youtube_url" => "https://www.youtube.com/watch?v=Get7rqXYrbQ",

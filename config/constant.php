@@ -10,7 +10,10 @@ return [
         'highlight-1.png',
         'highlight-2.png',
         'thropy-list-1.svg',
-        'thropy-list-2.svg'
+        'thropy-list-2.svg',
+        'map-1.png',
+        'article-1.png',
+        'article-2.png'
     ]
 ];
 
