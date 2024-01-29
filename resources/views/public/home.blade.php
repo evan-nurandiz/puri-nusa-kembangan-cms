@@ -698,7 +698,7 @@
                     <span class="section-title__tagline">Sekeliling</span>
                     <h2 class="section-title__title">Lokasi Strategis</h2>
                 </div>
-                <div class="row">
+                <div class="row d-flex" style="background: white; align-items:center;">
                     <div class="col-xl-4 col-lg-5">
                         <div class="neighborhoods__left">
                             <div class="neighborhoods__faq">
@@ -765,12 +765,13 @@
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-7">
-                        <div class="neighborhoods__right">
+                        <img src="{{asset('assets/images/map-1.png')}}" alt="" style="width:100%;padding: 15px 0px;">
+                        <!-- <div class="neighborhoods__right">
                             <div class="neighborhoods__img-box">
                                 <div class="neighborhoods__img">
-                                    <img src="{{asset('assets/images/map-1.png')}}" alt="">
+                                    <img src="{{asset('assets/images/map-1.jpg')}}" alt="">
                                 </div>
-                                <!-- <div class="neighborhoods__location-1">
+                                <div class="neighborhoods__location-1">
                                     <div class="neighborhoods__map-markar"></div>
                                     <div class="neighborhoods__popup-box">
                                         <div class="neighborhoods__popup">
@@ -825,9 +826,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
