@@ -2,9 +2,9 @@
 
 @section('cms-title')
     @if(isset($article))
-        Tambah Artikel
-    @else
         Edit Artikel
+    @else
+        Tambah Artikel
     @endif
 @endsection
 @section('content')
