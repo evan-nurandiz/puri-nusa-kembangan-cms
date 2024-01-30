@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Purinusa Kembangan | Your next level of Home </title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('assets/images/main-icon.ico')}}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets/images/main-icon.ico')}}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/images/main-icon.ico')}}" />
-    <link rel="manifest" href="{{asset('assets/images/main-icon.ico')}}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('assets/images/144x144.jpg')}}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets/images/48x48.jpg')}}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/images/48x48.jpg')}}" />
+    <link rel="manifest" href="{{asset('assets/images/48x48.jpg')}}" />
     <meta name="description" content="Purinusa Kembangan | Your next level of Home" />
 
     <!-- fonts -->
@@ -947,7 +947,7 @@
                                             >{{$general->content->contact_number}}</a>
                                         <a href="https://purinusakembangan.com" class="d-block" style="color: white !important;">www.purinusakembangan.com</a>
                                     </div>
-                                    <div class="site-footer__social" style="margin-bottom: 16px;">
+                                    <div class="site-footer__social" style="margin-bottom: 16px; justify-content:center">
                                         @if(isset($general->content->twitter_link)) 
                                             <a href="{{$general->content->twitter_link}}"><i class="fab fa-twitter"></i></a>
                                         @endif
