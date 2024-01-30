@@ -21,6 +21,8 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="{{url('/assets/vendors/bootstrap/css/bootstrap.min.css')}}" />
     <link rel="stylesheet" href="{{url('/assets/vendors/animate/animate.min.css')}}" />
     <link rel="stylesheet" href="{{url('/assets/vendors/animate/custom-animate.css')}}" />
@@ -42,7 +44,24 @@
     <link rel="stylesheet" href="{{url('/assets/vendors/jquery-ui/jquery-ui.css')}}" />
     <link rel="stylesheet" href="{{url('/assets/vendors/timepicker/timePicker.css')}}" />
 
-    <style>
+    <!-- template styles -->
+    <link rel="stylesheet" href="{{url('/assets/css/aports.css')}}" />
+    <link rel="stylesheet" href="{{url('/assets/css/aports-responsive.css')}}" />
+    {!!$general->content->tiktok_pixel_script!!}
+
+    @if(isset($general->meta_pixel_script))
+        {!!$general->meta_pixel_script!!}
+    @endif
+
+    @if(isset($general->google_tag_script))
+        {!!$general->google_tag_script!!}
+    @endif
+
+    @if(isset($general->custom_heder_script))
+        {!!$general->custom_heder_script!!}
+    @endif
+
+    <style type="text/css">
         .floating {
             position: fixed;
             width: 50px;
@@ -61,24 +80,17 @@
         .fab-icon {
             margin-top: 10px;
         }
+        .b-title {
+            color: #E3C68C;
+            font-family: Roboto, sans-serif;
+            font-size: 75px;
+            font-style: normal;
+            font-weight: 100;
+            line-height: normal;
+            text-align: center;
+            letter-spacing: 8px;
+        }
     </style>
-
-    <!-- template styles -->
-    <link rel="stylesheet" href="{{url('/assets/css/aports.css')}}" />
-    <link rel="stylesheet" href="{{url('/assets/css/aports-responsive.css')}}" />
-    {!!$general->content->tiktok_pixel_script!!}
-
-    @if(isset($general->meta_pixel_script))
-        {!!$general->meta_pixel_script!!}
-    @endif
-
-    @if(isset($general->google_tag_script))
-        {!!$general->google_tag_script!!}
-    @endif
-
-    @if(isset($general->custom_heder_script))
-        {!!$general->custom_heder_script!!}
-    @endif
 </head>
 
 <body class="custom-cursor">
@@ -245,7 +257,7 @@
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="main-slider__content">
-                                            <h2 class="main-slider__title">{{ $banner->title }}<br> <br> <br></h2>
+                                            <h2 class="main-slider__title b-title"><br/><br/><br/>{{ $banner->title }}</h2>
                                         </div>
                                     </div>
                                 </div>
