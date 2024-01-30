@@ -947,7 +947,7 @@
                                             >{{$general->content->contact_number}}</a>
                                         <a href="https://purinusakembangan.com" class="d-block" style="color: white !important;">www.purinusakembangan.com</a>
                                     </div>
-                                    <div class="site-footer__social" style="margin-bottom: 16px; justify-content:center">
+                                    <div class="site-footer__social" style="margin-bottom: 16px;">
                                         @if(isset($general->content->twitter_link)) 
                                             <a href="{{$general->content->twitter_link}}"><i class="fab fa-twitter"></i></a>
                                         @endif
