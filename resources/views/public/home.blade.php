@@ -924,6 +924,37 @@
                 <div class="container">
                     <div class="site-footer__top-inner">
                         <div class="row">
+                            <div class="col-xl-9 col-lg-9 col-md-12 text-center text-lg-start wow fadeInUp" data-wow-delay="100ms">
+                                <div class="footer-widget__column footer-widget__about">
+                                    <div class="footer-widget__about-text-box">
+                                        <img style="width: 580px; max-width: 100%" src="{{asset('assets/images/your-next-level-of-home.png')}}">
+                                        <a
+                                            href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?"
+                                            style="display:block;color: white !important;font-size: 37px; margin-top: 32px; font-weight: bold;"
+                                            >{{$general->content->contact_number}}</a>
+                                        <a href="https://purinusakembangan.com" class="d-block" style="color: white !important;">www.purinusakembangan.com</a>
+                                    </div>
+                                    <div class="site-footer__social" style="margin-bottom: 16px;">
+                                        @if(isset($general->content->twitter_link)) 
+                                            <a href="{{$general->content->twitter_link}}"><i class="fab fa-twitter"></i></a>
+                                        @endif
+                                        @if(isset($general->content->facebook_link)) 
+                                            <a href="{{$general->content->facebook_link}}"><i class="fab fa-facebook"></i></a>
+                                        @endif
+                                        <a href="{{$general->content->instagram_link}}"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="400ms" style="text-align: center;margin-top: 8px;">
+                                <img style="width: 280px; max-width: 100%" src="{{asset('assets/images/finely-crafted-by.png')}}">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="container">
+                    <div class="site-footer__top-inner">
+                        <div class="row">
                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div class="footer-widget__column footer-widget__about">
                                     <div class="footer-widget__about-text-box">
@@ -940,7 +971,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                                 <div class="footer-widget__column footer-widget__Explore">
                                     <div class="footer-widget__title-box">
                                         <h3 class="footer-widget__title">Explore</h3>
@@ -953,8 +984,8 @@
                                         <li><a href="https://api.whatsapp.com/send?phone=62818830153&text=Hi, saya tertarik dengan Purinusa Kembangan. Bisa minta info lebih lanjut?">Blank page</a></li>
                                     </ul>
                                 </div>
-                            </div> -->
-                            <!-- <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                                 <div class="footer-widget__column footer-widget__find">
                                     <div class="footer-widget__title-box">
                                         <h3 class="footer-widget__title">Find</h3>
@@ -962,7 +993,7 @@
                                     <p class="footer-widget__find-text">30 Broklyn Golden Street, New <br> York United
                                         States of <br> America</p>
                                 </div>
-                            </div> -->
+                            </div>
                             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                                 <div class="footer-widget__column footer-widget__Contact">
                                     <div class="footer-widget__title-box">
@@ -990,9 +1021,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
-            <div class="site-footer__bottom">
+            <!-- <div class="site-footer__bottom">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
@@ -1003,7 +1034,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </footer>
         <!--Site Footer End-->
 
