@@ -47,7 +47,9 @@
     <!-- template styles -->
     <link rel="stylesheet" href="{{url('/assets/css/aports.css')}}" />
     <link rel="stylesheet" href="{{url('/assets/css/aports-responsive.css')}}" />
-    {!!$general->content->tiktok_pixel_script!!}
+    @if(isset($general->content->tiktok_pixel_script))
+        {!!$general->content->tiktok_pixel_script!!}
+    @endif
 
     @if(isset($general->meta_pixel_script))
         {!!$general->meta_pixel_script!!}
