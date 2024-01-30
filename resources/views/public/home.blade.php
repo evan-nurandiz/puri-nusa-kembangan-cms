@@ -825,8 +825,8 @@
                     }}'>
                                 <div class="swiper-wrapper">
                                     @foreach($awards->content->award_list as $award)
-                                    <div class="swiper-slide">
-                                        <img src="{{asset('assets/images/'. $award->award_image)}}" alt="">
+                                    <div class="swiper-slide"  style="align-self: end;">
+                                        <img style="opacity:1; height: 200px" src="{{asset('assets/images/'. $award->award_image)}}" alt="">
                                     </div><!-- /.swiper-slide -->
                                     @endforeach
                                 </div>
@@ -1062,8 +1062,9 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="/" aria-label="logo image"><img src="{{asset('assets/images/logo-3.png')}}" width="122"
-                        alt="" /></a>
+                <a href="/" aria-label="logo image">
+                    <img src="{{asset('assets/images/main-icon.svg')}}" style="padding-left: 16px;" width="244" alt="" />
+                </a>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
@@ -1079,14 +1080,14 @@
                     <a href="tel:666-888-0000">666 888 0000</a>
                 </li> -->
             </ul><!-- /.mobile-nav__contact -->
-            <div class="mobile-nav__top">
+            <!-- <div class="mobile-nav__top">
                 <div class="mobile-nav__social">
                     <a href="#" class="fab fa-twitter"></a>
                     <a href="#" class="fab fa-facebook-square"></a>
                     <a href="#" class="fab fa-pinterest-p"></a>
                     <a href="#" class="fab fa-instagram"></a>
-                </div><!-- /.mobile-nav__social -->
-            </div><!-- /.mobile-nav__top -->
+                </div>
+            </div> -->
 
 
 
