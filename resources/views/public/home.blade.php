@@ -304,7 +304,7 @@
         <!--Main Slider End-->
 
         <!--About One Start-->
-        <section class="about-one" id="konsep">
+        <section class="about-one observe" id="konsep">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
@@ -417,7 +417,7 @@
         <!--Counter One End-->
 
         <!--Feature One Start-->
-        <section class="feature-one" id="keunggulan" style="padding-bottom: 0;">
+        <section class="feature-one observe" id="keunggulan" style="padding-bottom: 0;">
             <div class="feature-one__bg-box">
                 <div class="feature-one__bg"></div>
             </div>
@@ -543,7 +543,7 @@
         <!--Feature One End-->
 
         <!--Floor Plan Start-->
-        <section class="floor-plan" id="layout" style="padding-top: 120px;">
+        <section class="floor-plan observe" id="layout" style="padding-top: 120px;">
             <div class="container">
                 <div class="section-title text-center">
                     <span class="section-title__tagline">{{ $houseLayout->content->house_layout_small_title }}</span>
@@ -605,7 +605,7 @@
         <!--Floor Plan End-->
 
         <!--Apartments One Start-->
-        <section class="apartments-one" id="tipe">
+        <section class="apartments-one observe" id="tipe">
             <div class="container" style="padding-top:120px">
                 <div class="section-title text-center">
                     <span class="section-title__tagline">{{ $houseType->content->house_type_small_title }}</span>
@@ -642,7 +642,7 @@
         <!--Apartments One End-->
 
         <!--Neighborhoods Start-->
-        <section class="neighborhoods" id="sekeliling">
+        <section class="neighborhoods observe" id="sekeliling">
             <div class="neighborhoods-bg"
                 style="background-image: url('{{ asset('/assets/images/neighborhoods-bg.jpg')}}');"></div>
             <div class="container">
@@ -830,7 +830,7 @@
         <!--Contact One End-->
 
         <!--News One Start-->
-        <section class="news-one" style="padding-top: 120px;" id="artikel">
+        <section class="news-one observe" style="padding-top: 120px;" id="artikel">
             <div class="container">
                 <div class="section-title text-center">
                     <span class="section-title__tagline">What’s Happening</span>
@@ -1131,11 +1131,20 @@
     <script src="{{url('/js/aports.js')}}"></script>
 
     <script type="text/javascript">
-        $(".main-menu__list a").click(function(){
-            $(".main-menu__list li").removeClass("current")
-            a = $(this).attr("href")
-            $("[href='"+a+"']").parent().addClass("current")
-        })
+        a = ""
+        aNow = ""
+        $(document).scroll(function () {
+        $('section.observe').each(function () {
+            if($(this).position().top-300 <= $(document).scrollTop() && ($(this).position().top-300 + $(this).outerHeight()) > $(document).scrollTop()){
+                aNow = "#"+$(this).attr('id')
+                if(aNow != a) {
+                    a = aNow
+                    $(".main-menu__list li").removeClass("current")
+                    $("[href='"+a+"']").parent().addClass("current")
+                }
+            }
+        });
+    });
     </script>
 </body>
 
